@@ -23,11 +23,13 @@ Personal [Agent Skills](https://agentskills.io/specification) library for Cursor
 
    Links `skills/<name>/` into `~/.cursor/skills/<name>`. Do not use both methods at once for the same names.
 
-   Details: [docs/plugins.md](docs/plugins.md).
+   One-shot (Cursor + Claude + Codex + optional extras):
 
-   **Claude Code:** [docs/claude-code.md](docs/claude-code.md) — `./scripts/link-claude-skills.sh`
+   ```bash
+   ./scripts/link-all-skills.sh
+   ```
 
-   **OpenAI Codex app:** [docs/codex.md](docs/codex.md) — `./scripts/link-codex-skills.sh`
+   Per-host details: [docs/plugins.md](docs/plugins.md), [docs/claude-code.md](docs/claude-code.md), [docs/codex.md](docs/codex.md). Optional Codex fleet + usage: [optional/README.md](optional/README.md).
 
 3. In any **application** project, add an `AGENTS.md` with test/build/lint commands. Skills read that file; they do not hardcode your stack.
 

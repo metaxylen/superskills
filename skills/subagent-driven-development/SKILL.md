@@ -46,6 +46,17 @@ User chose SDD explicitly or tasks are independent and review gates matter.
 
 Do not pause for "continue?" between tasks unless a stop condition fires.
 
+## Parallel lanes
+
+When several tasks are **independent** and the host can run background jobs:
+
+- One **worktree per write lane** (`using-git-worktrees`); never two writers on the same checkout.
+- Fire independent lanes in one turn when safe; throughput beats serial waiting.
+- Each lane gets a **complete brief** (spec slice, files, acceptance, test command). Instruction-following runners do not improvise missing scope.
+- Before a large fleet, check subscription headroom; optional `limit` skill if installed.
+
+External Codex CLI delegation: optional `codex-fleet` skill if installed — action skill, not commentary.
+
 ## Stop and ask (only)
 
 - Irreversible/destructive ops; security-sensitive; push/merge/publish; plan unsalvageable.
