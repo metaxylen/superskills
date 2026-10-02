@@ -7,7 +7,7 @@ description: >-
   when an agent or prior message asserted success without pasted output. Do not
   use as the first step on a new vague task, for routing, or for writing a
   review of someone else's diff—use dev-router or code-review-and-quality
-  instead.
+  instead. Turkish cues: bitti mi, doğrula, kanıt göster, test geçti mi, hazır mı.
 ---
 
 # Verification before completion

@@ -8,7 +8,8 @@ description: >-
   Do not use for a single-line fix, when a full spec does not exist yet and
   scope is still fuzzy, or when only planning or debugging—use
   brainstorming, writing-plans, systematic-debugging, or
-  test-driven-development for single-behavior TDD cycles instead.
+  test-driven-development for single-behavior TDD cycles instead. Turkish cues:
+  artımlı, küçük adım, ince dilim, çok dosya değişecek.
 ---
 
 # Incremental implementation

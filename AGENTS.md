@@ -37,13 +37,15 @@ Isolated feature work: `.worktrees/<branch>` (git-ignored). See skill `using-git
 | Feature spec | `docs/superskills/specs/<feature>.md` |
 | Plan ledger (runtime) | `<plan-stem>-ledger.md` next to the plan file |
 
-## Validation (manual until automated)
+## Validation
 
-- Every skill folder: `name` in frontmatter matches directory name.
-- `description` includes use-when and do-not-use-when; no overlap with other v1 skills (`skills/CONSOLIDATION.md`).
-- Body language: English.
+```bash
+./tests/skill-frontmatter.sh
+```
 
-Future: `tests/skill-frontmatter` (not required for v1).
+Checks: 16 folders, `name` matches directory, `description` ≤1024 chars, includes `Do not use` and `Turkish cues:`, non-empty body; `tests/routing-triggers.tsv` keywords appear in the matching skill description.
+
+Manual: overlap review against `skills/CONSOLIDATION.md`. Body language: English.
 
 ## Boundaries
 

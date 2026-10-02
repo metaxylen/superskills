@@ -7,7 +7,8 @@ description: >-
   subagents instead of inline executing-plans. Use when parallel lanes are
   needed for separate tasks. Do not use without a plan file, for a single tiny
   change, when the user chose inline execution, or when no subagent or Task tool
-  exists—use executing-plans or incremental-implementation instead.
+  exists—use executing-plans or incremental-implementation instead. Turkish cues:
+  alt ajan, subagent, paralel görev, her task review.
 ---
 
 # Subagent-driven development

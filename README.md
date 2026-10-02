@@ -42,6 +42,12 @@ When using superskills on itself or as a template:
 
 See [docs/README.md](docs/README.md).
 
+## Quality check
+
+```bash
+./tests/skill-frontmatter.sh
+```
+
 ## Provenance
 
 Merged ideas from five public skill collections; see [docs/SOURCES.md](docs/SOURCES.md). Skill text in this repo is original English; upstream repos are reference only.

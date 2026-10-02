@@ -8,7 +8,8 @@ description: >-
   Do not use for root-cause investigation without a test idea yet, for PR review
   only, for planning or brainstorming only, or for claiming work complete—use
   systematic-debugging, code-review-and-quality, writing-plans, or
-  verification-before-completion instead.
+  verification-before-completion instead. Turkish cues: TDD, test önce, kırmızı
+  yeşil, önce test yaz, regresyon testi.
 ---
 
 # Test-driven development

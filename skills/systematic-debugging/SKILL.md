@@ -8,7 +8,8 @@ description: >-
   or diff review without a failure to investigate, for writing a new feature
   from scratch, for authoring a plan only, or when the user only wants tests
   added without a failing case yet—use code-review-and-quality,
-  brainstorming, writing-plans, or test-driven-development instead.
+  brainstorming, writing-plans, or test-driven-development instead. Turkish cues:
+  hata ayıkla, debug, bozuldu, çöküyor, kök neden, stack trace, log.
 ---
 
 # Systematic debugging

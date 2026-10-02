@@ -7,6 +7,8 @@ description: >-
   workflow, or wants a post-mortem on this or a past chat. Do not use for
   product bugs in application code—use systematic-debugging. Do not use when
   the user only wants to continue forward work—route with dev-router instead.
+  Turkish cues: oturum kötü, yanlış skill, zaman kaybı, planı dinlemedi,
+  post-mortem.
 ---
 
 # Diagnosing workflow

@@ -22,3 +22,5 @@ Sixteen skills. One `SKILL.md` each. Domain-specific Osmani/Pocock copies and me
 | `diagnosing-workflow` | Oturum kötü gittiğinde teşhis |
 
 Cursor’a yalnız bu klasörleri bağla (`~/.cursor/skills` symlink veya seçili install).
+
+Türkçe tetikleyiciler yalnızca her `SKILL.md` içindeki `description` alanında (`Turkish cues:`). Doğrulama: `./tests/skill-frontmatter.sh`.

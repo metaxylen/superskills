@@ -8,7 +8,8 @@ description: >-
   checklist, or implement from docs/superskills/plans. Do not use when
   there is no plan, when only brainstorming or planning is requested, or
   when the user asked for subagent-per-task execution—use writing-plans,
-  brainstorming, or subagent-driven-development instead.
+  brainstorming, or subagent-driven-development instead. Turkish cues: planı uygula,
+  plandan devam, checklist, planı çalıştır.
 ---
 
 # Executing plans

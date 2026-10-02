@@ -9,7 +9,8 @@ description: >-
   use when the user already named the task (PR review, write a plan, add tests,
   debug with root cause, merge branch, worktree, run subagents, or how skills
   work)—invoke that skill directly. Do not implement code in this skill; only
-  route and hand off.
+  route and hand off. Turkish cues: belirsiz istek, şuna bak, bir bak, düzelt,
+  devam et, ne yapayım, log yapıştırdım.
 ---
 
 # Dev router
