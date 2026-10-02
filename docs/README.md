@@ -7,6 +7,7 @@ Documentation for the superskills repo and conventions used by its skills.
 | Document | Description |
 |----------|-------------|
 | [plugins.md](./plugins.md) | Cursor plugin install vs symlink |
+| [codex.md](./codex.md) | Codex install (`~/.agents/skills`) |
 | [marketplace.md](./marketplace.md) | Publish checklist (optional) |
 | [templates/AGENTS.example.md](./templates/AGENTS.example.md) | Copy into application repos |
 | [superskills/plans/README.md](./superskills/plans/README.md) | Implementation plan format and location |
