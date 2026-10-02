@@ -10,7 +10,8 @@ description: >-
   debug with root cause, merge branch, worktree, run subagents, or how skills
   work)—invoke that skill directly. Do not implement code in this skill; only
   route and hand off. Turkish cues: belirsiz istek, şuna bak, bir bak, düzelt,
-  devam et, ne yapayım, log yapıştırdım.
+  devam et, ne yapayım, log yapıştırdım. Optional installs: codex exec → codex-fleet;
+  kota → limit (see optional/).
 ---
 
 # Dev router
@@ -43,6 +44,8 @@ description: >-
 | Branch, merge, release, finish this work | `git-workflow-and-versioning` |
 | Parallel worktree or isolate this task | `using-git-worktrees` |
 | Subagents, parallel lanes, delegate chunks | `subagent-driven-development` |
+| Run Codex CLI, codex exec, parallel codex lanes | `codex-fleet` (optional — `optional/`) |
+| Usage limit, quota left, how much capacity | `limit` (optional — `optional/`) |
 | Claiming done; need proof before closing | `verification-before-completion` |
 | Skills meta, which workflow, slash skill help | `using-agent-skills` |
 | Session went wrong, wrong skill, wasted loop | `diagnosing-workflow` |

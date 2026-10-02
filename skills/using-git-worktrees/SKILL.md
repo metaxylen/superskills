@@ -45,6 +45,8 @@ Honor decline — skip creation, still use a feature branch if possible.
 
 Branch name: short, kebab-case, tied to task (`feat/short-name`).
 
+**Parallel write lanes:** one worktree (and branch) per concurrent implementing lane; merge through `git-workflow-and-versioning` after each lane lands.
+
 ## Step 2 — Setup
 
 Install deps per project (`package.json`, `pyproject.toml`, etc.). Run a quick smoke test or full suite per plan risk.

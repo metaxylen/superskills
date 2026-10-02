@@ -21,6 +21,6 @@ Sixteen skills. One `SKILL.md` each. No duplicate or archived skill trees in thi
 | `writing-skills` | Yeni skill yazımı |
 | `diagnosing-workflow` | Oturum kötü gittiğinde teşhis |
 
-Cursor’a yalnız bu klasörleri bağla (`~/.cursor/skills` symlink veya seçili install).
+Cursor’a yalnız bu klasörleri bağla (`~/.cursor/skills` symlink veya seçili install). Ek skill’ler: `optional/` (ayrı katalog).
 
 Türkçe tetikleyiciler yalnızca her `SKILL.md` içindeki `description` alanında (`Turkish cues:`). Doğrulama: `./tests/run-all.sh`.
