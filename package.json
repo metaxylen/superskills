@@ -1,0 +1,9 @@
+{
+  "name": "superskills",
+  "private": true,
+  "version": "1.1.0",
+  "description": "Cursor agent skills library",
+  "scripts": {
+    "test": "./tests/run-all.sh"
+  }
+}

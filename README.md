@@ -58,8 +58,10 @@ See [docs/README.md](docs/README.md).
 ## Quality check
 
 ```bash
-./tests/skill-frontmatter.sh
+./tests/run-all.sh
 ```
+
+Manual Cursor routing: [tests/routing-manual-test.md](tests/routing-manual-test.md). App `AGENTS.md` template: [docs/templates/AGENTS.example.md](docs/templates/AGENTS.example.md).
 
 ## License
 

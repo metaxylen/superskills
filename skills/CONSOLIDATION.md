@@ -23,4 +23,4 @@ Sixteen skills. One `SKILL.md` each. No duplicate or archived skill trees in thi
 
 Cursor’a yalnız bu klasörleri bağla (`~/.cursor/skills` symlink veya seçili install).
 
-Türkçe tetikleyiciler yalnızca her `SKILL.md` içindeki `description` alanında (`Turkish cues:`). Doğrulama: `./tests/skill-frontmatter.sh`.
+Türkçe tetikleyiciler yalnızca her `SKILL.md` içindeki `description` alanında (`Turkish cues:`). Doğrulama: `./tests/run-all.sh`.

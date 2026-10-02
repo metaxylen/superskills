@@ -1,13 +1,16 @@
 # tests/
 
-## skill-frontmatter
-
 ```bash
-./tests/skill-frontmatter.sh
+./tests/run-all.sh    # frontmatter + routing
+npm test              # same
 ```
 
-Validates all `skills/*/SKILL.md` frontmatter and Turkish routing snippets in [routing-triggers.tsv](./routing-triggers.tsv).
+| File | Role |
+|------|------|
+| `skill_frontmatter.py` | YAML, plugin.json, trigger files |
+| `routing_eval.py` | EN/TR triggers, unique Turkish tokens |
+| `routing-triggers.tsv` | Turkish substring checks |
+| `routing-triggers-en.tsv` | English substring checks |
+| `routing-manual-test.md` | Phrases to try in Cursor |
 
-Add a row to `routing-triggers.tsv` when you add a new Turkish cue (tab-separated: `skill-name`, `substring`).
-
-See also root [AGENTS.md](../AGENTS.md).
+Add a tab-separated row when you change a skill `description`.

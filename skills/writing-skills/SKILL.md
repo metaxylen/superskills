@@ -17,7 +17,7 @@ description: >-
 - `skills/<name>/SKILL.md` validates: `name` matches folder; required frontmatter; body under ~500 lines.
 - `description` has **use when** and **do not use when** without overlapping other v1 skills (see `CONSOLIDATION.md`).
 - Optional **Turkish cues:** comma-separated triggers in `description` only (English body).
-- User approved text before commit; `tests/skill-frontmatter` or manual checklist run when available.
+- User approved text before commit; `./tests/run-all.sh` passes.
 - Symlink target documented in root `README.md` when skill should load in Cursor.
 
 ## Spec ([agentskills.io](https://agentskills.io/specification))
