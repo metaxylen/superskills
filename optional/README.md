@@ -1,11 +1,13 @@
 # Optional skills (vendored)
 
-Not part of the v1 sixteen in `skills/`. Extra capabilities you can link alongside superskills.
+Not part of the v1 sixteen in `skills/`. Link alongside superskills.
 
 | Skill | Use when |
 |-------|----------|
-| `codex-fleet` | Run Codex CLI (`codex exec`), parallel lanes, worktree-isolated writes, image generation |
-| `limit` | Show Claude + Codex subscription usage before large delegate runs |
+| `codex-fleet` | Codex CLI (`codex exec`), parallel lanes, worktree writes, images |
+| `limit` | Claude + Codex subscription usage before large delegate runs |
+| `grilling` | Relentless interview to stress-test a plan or design |
+| `git-guardrails-claude-code` | Claude Code hooks blocking dangerous git commands |
 
 ## Install
 
@@ -13,9 +15,7 @@ Not part of the v1 sixteen in `skills/`. Extra capabilities you can link alongsi
 ./scripts/link-optional-skills.sh
 ```
 
-Links into `~/.cursor/skills/`, `~/.claude/skills/`, and `~/.agents/skills/` (skips missing parent dirs).
-
-Uninstall symlinks only:
+Links into `~/.cursor/skills/`, `~/.claude/skills/`, and `~/.agents/skills/`.
 
 ```bash
 ./scripts/link-optional-skills.sh --unlink
@@ -23,4 +23,4 @@ Uninstall symlinks only:
 
 ## License
 
-Vendored content is MIT — see [LICENSE-MIT-vendor.txt](./LICENSE-MIT-vendor.txt). Do not merge these into the v1 catalog without updating routing tests.
+MIT vendored components: [LICENSE-MIT-vendor.txt](./LICENSE-MIT-vendor.txt), [LICENSE-MIT-mattpocock.txt](./LICENSE-MIT-mattpocock.txt).

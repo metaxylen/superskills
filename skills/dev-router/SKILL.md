@@ -33,6 +33,7 @@ description: >-
 | Signal in the user message | Skill |
 |----------------------------|-------|
 | What to build is unclear; ideas, options, scope fuzzy | `brainstorming` |
+| Stress-test a plan, "grill" the design | `grilling` (optional — `optional/`) |
 | Has direction, needs a written step plan | `writing-plans` |
 | Approved plan exists; execute it | `executing-plans` |
 | Small concrete change or "add X" with enough detail | `incremental-implementation` |
