@@ -1,5 +1,5 @@
 # Claude Code
 
-This repo targets **Cursor** with superskills under `skills/` and `.cursor-plugin/plugin.json`.
+Personal skills for Claude Code: run `./scripts/link-claude-skills.sh` from this repo.
 
-For commands and validation, use root [AGENTS.md](./AGENTS.md) and [README.md](./README.md).
+Details: [docs/claude-code.md](./docs/claude-code.md). Validation: `./tests/run-all.sh`.

@@ -25,7 +25,9 @@ Personal [Agent Skills](https://agentskills.io/specification) library for Cursor
 
    Details: [docs/plugins.md](docs/plugins.md).
 
-   **OpenAI Codex** (separate path): [docs/codex.md](docs/codex.md) — `./scripts/link-codex-skills.sh`
+   **Claude Code:** [docs/claude-code.md](docs/claude-code.md) — `./scripts/link-claude-skills.sh`
+
+   **OpenAI Codex app:** [docs/codex.md](docs/codex.md) — `./scripts/link-codex-skills.sh`
 
 3. In any **application** project, add an `AGENTS.md` with test/build/lint commands. Skills read that file; they do not hardcode your stack.
 
