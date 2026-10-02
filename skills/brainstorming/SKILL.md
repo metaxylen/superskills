@@ -31,6 +31,8 @@ description: >-
 
 When unsure, take the **heavier** path. Mid-task discovery of hidden complexity **upgrades** the path — stop, say so, re-classify.
 
+For relentless Q&A stress-testing (design tree, numbered rounds), optional `grilling` in `optional/` after scope is roughly known.
+
 ## Process
 
 1. **Intent** — Outcome, user, success criteria. One focused question if purpose is missing.

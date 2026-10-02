@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Optional `grilling`, `git-guardrails-claude-code` (MIT); writing-skills `references/mechanics.md`.
+
 ## 1.2.0
 
 - Optional vendored skills: `codex-fleet`, `limit` (MIT) under `optional/`.

@@ -36,6 +36,8 @@ Body sections (this repo): **Done**, **Steps** or process, **Boundaries**, **Got
 
 Commands and stack belong in project `AGENTS.md`, not in skills unless tool-specific.
 
+See [references/mechanics.md](references/mechanics.md) for invocation and description mechanics.
+
 ## Description rules
 
 - One primary job per skill.
