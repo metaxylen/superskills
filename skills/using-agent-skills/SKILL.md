@@ -59,6 +59,8 @@ Project commands (`test`, `build`, `lint`) belong in the **project** `AGENTS.md`
 
 Full list is also in `skills/CONSOLIDATION.md`.
 
+**Optional** (separate install under `optional/`, same symlink names): see [optional/README.md](../../optional/README.md) and the optional rows in `dev-router`. Examples: `codex-fleet`, `limit`, `grilling`, `code-review` (two-axis), `domain-modeling`.
+
 ## Choosing a skill
 
 ```

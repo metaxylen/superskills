@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.3
+
+- `documentations/` removed from git (local-only, `.gitignore`); history purged before public release.
+
+## 1.2.2
+
+- Optional workflow skills under `optional/`; `dev-router` optional routes and correct optional paths on handoff.
+- Router integrity + synthetic routing scenario tests; optional routing trigger file.
+- Removed unused `optional/*/agents/` stubs (Codex display metadata only).
+
 ## 1.2.1
 
 - Optional `grilling`, `git-guardrails-claude-code` (MIT); writing-skills `references/mechanics.md`.

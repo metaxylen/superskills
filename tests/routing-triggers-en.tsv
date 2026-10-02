@@ -11,7 +11,6 @@ executing-plans	inline execution
 incremental-implementation	vertical slices
 incremental-implementation	plan task
 spec-driven-development	requirements doc
-spec-driven-development	requirements doc
 spec-driven-development	PRD
 test-driven-development	red-green
 test-driven-development	test-first

@@ -27,4 +27,14 @@ Run after install (`link-cursor-skills.sh` or `install-cursor-plugin.sh`) and **
 | review my PR | `code-review-and-quality` |
 | merge when tests pass | `git-workflow-and-versioning` |
 
-If routing is wrong, edit **description** only (keep body English), add a row to `routing-triggers.tsv` or `routing-triggers-en.tsv`, run `./tests/run-all.sh`.
+## Optional (after `link-optional-skills.sh`)
+
+| Message | Expected skill |
+|---------|----------------|
+| kota ne kadar kaldı | `limit` |
+| codex exec ile şunu yap | `codex-fleet` |
+| grill the plan | `grilling` |
+
+Automated: `./tests/routing_scenarios.py` (synthetic paths). Full suite: `./tests/run-all.sh`.
+
+If routing is wrong, edit **description** only (keep body English), add a row to `routing-triggers.tsv`, `routing-triggers-en.tsv`, or `optional-routing-triggers.tsv`, then run `./tests/run-all.sh`.

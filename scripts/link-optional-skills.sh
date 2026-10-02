@@ -16,7 +16,7 @@ usage() {
   cat <<EOF
 Usage: $(basename "$0") [--dry-run] [--unlink]
 
-Symlink optional/* skills (codex-fleet, limit) into Cursor, Claude, and Codex
+Symlink every optional/*/SKILL.md into Cursor, Claude, and Codex
 skill directories. Skips destinations that are not creatable.
 
 See optional/README.md.

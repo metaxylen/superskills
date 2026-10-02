@@ -4,3 +4,5 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 ./tests/skill-frontmatter.sh
 python3 ./tests/routing_eval.py
+python3 ./tests/router_integrity.py
+python3 ./tests/routing_scenarios.py

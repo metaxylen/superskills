@@ -42,6 +42,13 @@ description: >-
 | Failing test or build, stack trace, no suspected line yet | `systematic-debugging` |
 | Add or lock in tests, TDD, red-green | `test-driven-development` |
 | Review PR, diff, "look at my changes", pre-merge review | `code-review-and-quality` |
+| "Review since" a branch/commit; Standards + Spec in parallel | `code-review` (optional — `optional/`) |
+| Glossary, ADR, domain terminology | `domain-modeling` (optional — `optional/`) |
+| Deep module, seam, module interface design | `codebase-design` (optional — `optional/`) |
+| Research topic; official docs legwork to a file | `research` (optional — `optional/`) |
+| Hard bug or perf; diagnosis loop already stuck | `diagnosing-bugs` (optional — `optional/`) |
+| Handoff doc for next session | `handoff` (optional — `optional/`) |
+| Agent environment retro (not a bad-chat post-mortem) | `retro` (optional — `optional/`) |
 | Branch, merge, release, finish this work | `git-workflow-and-versioning` |
 | Parallel worktree or isolate this task | `using-git-worktrees` |
 | Subagents, parallel lanes, delegate chunks | `subagent-driven-development` |
@@ -51,12 +58,15 @@ description: >-
 | Skills meta, which workflow, slash skill help | `using-agent-skills` |
 | Session went wrong, wrong skill, wasted loop | `diagnosing-workflow` |
 | Author or edit a skill in superskills | `writing-skills` |
+| Long-form agent doc mechanics in an app repo | `writing-for-agents` (optional — `optional/`) |
 
 ## Tie-breakers
 
 - Failing test **and** named wrong behavior: `systematic-debugging` first (root cause), then `test-driven-development` if the next step is to add or fix tests.
 - New feature **and** no spec: `brainstorming` before `writing-plans` before implementation skills.
 - "Fix" with no error detail: `systematic-debugging` unless the user only wants a review of existing changes (`code-review-and-quality`).
+- PR/diff review vs two-axis since fixed point: `code-review-and-quality` for commentary; `code-review` (optional) when Standards and Spec must run in parallel sub-agents.
+- Fresh failure vs stuck diagnosis: `systematic-debugging` first; `diagnosing-bugs` (optional) only when the loop is stuck or user asks to diagnose deeper.
 
 ## If still ambiguous
 
@@ -71,7 +81,10 @@ Routing to: <skill-name>
 Reason: <one sentence>
 ```
 
-Then open `skills/<skill-name>/SKILL.md` and follow it. Do not merge steps from multiple skills in one turn.
+Then open the skill file and follow it. Do not merge steps from multiple skills in one turn.
+
+- v1 skills: `skills/<skill-name>/SKILL.md` in this repo (or `~/.cursor/skills/<skill-name>/` when symlinked).
+- Optional skills: `optional/<skill-name>/SKILL.md` (or the same name under `~/.cursor/skills/` after `link-optional-skills.sh`).
 
 ## Boundaries
 
@@ -85,5 +98,5 @@ Then open `skills/<skill-name>/SKILL.md` and follow it. Do not merge steps from 
 Route: <skill-name>
 Reason: <one sentence>
 AGENTS.md: <path or manifest fallback>
-Next: follow skills/<skill-name>/SKILL.md
+Next: follow skills/<skill-name>/SKILL.md or optional/<skill-name>/SKILL.md
 ```

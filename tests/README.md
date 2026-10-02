@@ -12,5 +12,8 @@ npm test              # same
 | `routing-triggers.tsv` | Turkish substring checks |
 | `routing-triggers-en.tsv` | English substring checks |
 | `routing-manual-test.md` | Phrases to try in Cursor |
+| `optional-routing-triggers.tsv` | Optional skill description substrings |
+| `router_integrity.py` | dev-router table → existing `skills/` / `optional/` |
+| `routing_scenarios.py` | Synthetic Fixit Corp path walkthrough (no LLM) |
 
-Add a tab-separated row when you change a skill `description`.
+Add a tab-separated row when you change a v1 or optional skill `description`.

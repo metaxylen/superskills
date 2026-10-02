@@ -1,6 +1,9 @@
 ---
 name: limit
-description: Show Claude and Codex subscription usage windows in one colored screen, live where possible. Use when the user asks "limit", "quota", "how much usage is left", or before choosing which model/pool to delegate a task to.
+description: >-
+  Show Claude and Codex subscription usage windows in one colored screen, live where possible.
+  Use when the user asks "limit", "quota", "how much usage is left", or before choosing which
+  model/pool to delegate a task to. Turkish cues: kota, limit, kullanım kotası.
 ---
 
 # Limit

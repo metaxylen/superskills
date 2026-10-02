@@ -36,7 +36,7 @@ Body sections (this repo): **Done**, **Steps** or process, **Boundaries**, **Got
 
 Commands and stack belong in project `AGENTS.md`, not in skills unless tool-specific.
 
-See [references/mechanics.md](references/mechanics.md) for invocation and description mechanics.
+See [references/mechanics.md](references/mechanics.md) for invocation and description mechanics. For full agent-doc style (pointers, pruning) in **application** repos, link optional `writing-for-agents` after `./scripts/link-optional-skills.sh`.
 
 ## Description rules
 

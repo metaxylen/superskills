@@ -41,8 +41,9 @@ Personal [Agent Skills](https://agentskills.io/specification) library for Cursor
 | `docs/` | Plugin install, specs, and implementation plans for this repo |
 | `.cursor-plugin/` | Cursor Plugin manifest (`plugin.json`) |
 | `scripts/` | `install-cursor-plugin.sh`, `link-cursor-skills.sh` |
-| `tests/` | Skill validation (frontmatter, routing) when added |
-| `documentations/` | Personal archive — not part of the skill workflow |
+| `tests/` | Skill validation (frontmatter, routing) |
+| `optional/` | Extra skills (Codex fleet, grilling, etc.) — see [optional/README.md](optional/README.md) |
+| `documentations/` | Local-only personal notes (gitignored; not on GitHub) |
 
 ## Routing
 
