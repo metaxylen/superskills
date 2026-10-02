@@ -1,0 +1,35 @@
+# skill<TAB>English phrase (case-insensitive substring in description)
+dev-router	fix this
+dev-router	take a look
+dev-router	something broke
+brainstorming	how should we
+brainstorming	scope is fuzzy
+writing-plans	implementation plan
+writing-plans	multi-step
+executing-plans	execute the plan
+executing-plans	inline execution
+incremental-implementation	vertical slices
+incremental-implementation	plan task
+spec-driven-development	requirements doc
+spec-driven-development	requirements doc
+spec-driven-development	PRD
+test-driven-development	red-green
+test-driven-development	test-first
+systematic-debugging	root cause
+systematic-debugging	stack trace
+verification-before-completion	before commit
+verification-before-completion	ready
+code-review-and-quality	pull request
+code-review-and-quality	look at my changes
+git-workflow-and-versioning	pull request
+git-workflow-and-versioning	rebasing
+using-git-worktrees	isolated
+using-git-worktrees	separate branch workspace
+subagent-driven-development	subagents
+subagent-driven-development	per-task
+using-agent-skills	how skills work
+using-agent-skills	slash commands
+writing-skills	validate SKILL.md
+writing-skills	fix skill triggers
+diagnosing-workflow	post-mortem
+diagnosing-workflow	wasted time

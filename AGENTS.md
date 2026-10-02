@@ -56,12 +56,17 @@ Isolated feature work: `.worktrees/<branch>` (git-ignored). See skill `using-git
 ## Validation
 
 ```bash
-./tests/skill-frontmatter.sh
+./tests/run-all.sh
+# or: npm test
 ```
 
-Checks: 16 folders, `name` matches directory, `description` ≤1024 chars, includes `Do not use` and `Turkish cues:`, non-empty body; `tests/routing-triggers.tsv` keywords appear in the matching skill description.
+Checks: frontmatter, plugin JSON, Turkish and English routing triggers, unique Turkish cue tokens.
 
-Manual: overlap review against `skills/CONSOLIDATION.md`. Body language: English.
+Manual routing in Cursor: [tests/routing-manual-test.md](tests/routing-manual-test.md).
+
+Application project template: [docs/templates/AGENTS.example.md](docs/templates/AGENTS.example.md).
+
+Marketplace (later): [docs/marketplace.md](docs/marketplace.md).
 
 ## Boundaries
 
