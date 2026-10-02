@@ -2,15 +2,25 @@
 
 This file applies to **this repository** (the skill library). Application projects should have their own `AGENTS.md` with stack-specific commands.
 
-## Install skills in Cursor
+## Install in Cursor
+
+**Plugin copy** (see [docs/plugins.md](docs/plugins.md)):
+
+```bash
+./scripts/install-cursor-plugin.sh
+./scripts/install-cursor-plugin.sh --dry-run
+./scripts/install-cursor-plugin.sh --remove
+```
+
+**Symlink** (dev on this repo; do not combine with plugin install for same skill names):
 
 ```bash
 ./scripts/link-cursor-skills.sh
-./scripts/link-cursor-skills.sh --dry-run   # print actions only
-./scripts/link-cursor-skills.sh --unlink    # remove symlinks created by this script
+./scripts/link-cursor-skills.sh --dry-run
+./scripts/link-cursor-skills.sh --unlink
 ```
 
-Target: `~/.cursor/skills/<skill-name>` → `<repo-root>/skills/<skill-name>`.
+Validate manifest: `.cursor-plugin/plugin.json`. Skills directory: `skills/`.
 
 ## Git
 

@@ -26,6 +26,8 @@ description: >-
 
 Skills live under `skills/<name>/SKILL.md`. Cursor loads **name** and **description** for every skill at session start. The body loads only after a skill is selected.
 
+Install (pick one): `./scripts/install-cursor-plugin.sh` (plugin bundle under `~/.cursor/plugins/local/superskills/`) or `./scripts/link-cursor-skills.sh` (symlinks into `~/.cursor/skills/`). See `docs/plugins.md`. Do not use both for the same skill names.
+
 Progressive disclosure:
 
 1. **Description** — routing signal only (what + when + when not).

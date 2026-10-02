@@ -58,8 +58,9 @@ For description tuning: try phrasing against the other fifteen descriptions; adj
 
 ## Install path
 
-- Canonical: `~/Desktop/superskills/skills/` (this repo).
-- Cursor loads: symlink or copy into `~/.cursor/skills/<name>` (see `scripts/link-cursor-skills.sh` when implemented).
+- Canonical source: `skills/<name>/` in this repo.
+- Cursor: `scripts/install-cursor-plugin.sh` (plugin) or `scripts/link-cursor-skills.sh` (symlink dev). See `docs/plugins.md`.
+- Plugin manifest: `.cursor-plugin/plugin.json` (skills auto-discovered from `skills/`).
 
 ## Boundaries
 

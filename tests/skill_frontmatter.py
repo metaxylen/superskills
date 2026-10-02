@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -116,12 +117,25 @@ def main() -> int:
                     f"routing: trigger '{trigger}' not in {skill} description"
                 )
 
+    plugin_manifest = REPO_ROOT / ".cursor-plugin" / "plugin.json"
+    if plugin_manifest.is_file():
+        try:
+            data = json.loads(plugin_manifest.read_text(encoding="utf-8"))
+            if data.get("name") != "superskills":
+                errors.append("plugin.json: name must be 'superskills'")
+            if not data.get("description"):
+                errors.append("plugin.json: missing description")
+        except json.JSONDecodeError as e:
+            errors.append(f"plugin.json: invalid JSON: {e}")
+    else:
+        errors.append("missing .cursor-plugin/plugin.json")
+
     if errors:
         for e in errors:
             print(f"FAIL: {e}", file=sys.stderr)
         return 1
 
-    print(f"OK: {len(names)} skills validated")
+    print(f"OK: {len(names)} skills + cursor plugin validated")
     return 0
 
 
