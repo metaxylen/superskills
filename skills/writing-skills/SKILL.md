@@ -36,16 +36,16 @@ Body sections (this repo): **Done**, **Steps** or process, **Boundaries**, **Got
 
 Commands and stack belong in project `AGENTS.md`, not in skills unless tool-specific.
 
-## Description rules (avoid Superpowers overlap bugs)
+## Description rules
 
 - One primary job per skill.
 - **Do not use when** must point to the skill that owns the adjacent job.
 - Never "required on every message" unless `disable-model-invocation: true` and user invokes `/skill`.
-- No pasted system prompts or whole third-party catalogs.
+- No pasted system prompts or bulk-imported foreign skill trees.
 
-## Upstream pass (required)
+## Before you edit
 
-Before creating or materially editing a skill, open the closest skill in **all five** repos in [docs/SOURCES.md](../../docs/SOURCES.md). Merge the best routing and steps; note skips in the commit. Run `./scripts/check-upstream.sh` when comparing plugin or install layout.
+Read all sixteen descriptions in this repo; ensure one clear owner per vague user phrase. Run `./tests/skill-frontmatter.sh` before commit.
 
 ## Authoring loop (TDD for docs)
 
@@ -55,10 +55,10 @@ Before creating or materially editing a skill, open the closest skill in **all f
 
 For description tuning: try phrasing against the other fifteen descriptions; adjust until one winner per vague phrase.
 
-## Anthropic skill-creator alignment
+## Eval loop (optional)
 
 - Draft → test prompts → revise → expand tests when stable.
-- Evals are optional for personal sets; required before adding to shared v1 list.
+- Evals are optional for personal use; recommended before changing v1 routing.
 
 ## Install path
 
@@ -69,8 +69,8 @@ For description tuning: try phrasing against the other fifteen descriptions; adj
 ## Boundaries
 
 - **Always:** user approval before merge; English in repo skills unless user requests locale-specific triggers in YAML only.
-- **Ask first:** new v1 skill count >16; copying licensed repos verbatim.
-- **Never:** dump Osmani/Pocock trees into `~/.cursor/skills`; commit secrets in fixtures.
+- **Ask first:** new v1 skill count >16; copying entire external skill catalogs.
+- **Never:** install foreign skill trees into `~/.cursor/skills`; commit secrets in fixtures.
 
 ## Output
 

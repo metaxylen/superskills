@@ -20,7 +20,7 @@ description: >-
 - The user knows which skill applies (or that `dev-router` handles ambiguity).
 - The agent reads the project's nearest `AGENTS.md` for commands and boundaries.
 - At most one process skill and one specialist skill are active for the current step.
-- No skill text was copied from external repos; this library's `SKILL.md` files are authoritative.
+- This library's `SKILL.md` files are authoritative for superskills.
 
 ## How this library works
 
@@ -107,7 +107,7 @@ When a skill activates, read its current `SKILL.md` in this repo; do not rely on
 
 - **Always:** Prefer project `AGENTS.md` for tool commands; prefer one skill per step.
 - **Ask first:** Adding a new skill to the v1 set; changing another skill's description for routing.
-- **Never:** Install whole third-party skill catalogs into this repo; paste system prompts as skills; run destructive git commands unless the user asked.
+- **Never:** Bulk-import external skill catalogs into this repo; paste system prompts as skills; run destructive git commands unless the user asked.
 
 ## Output
 

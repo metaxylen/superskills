@@ -1,6 +1,6 @@
 # Active skill set (v1)
 
-Sixteen skills. One `SKILL.md` each. Domain-specific Osmani/Pocock copies and merge archives were removed.
+Sixteen skills. One `SKILL.md` each. No duplicate or archived skill trees in this repo.
 
 | Skill | Role |
 |-------|------|
