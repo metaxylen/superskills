@@ -43,6 +43,10 @@ Commands and stack belong in project `AGENTS.md`, not in skills unless tool-spec
 - Never "required on every message" unless `disable-model-invocation: true` and user invokes `/skill`.
 - No pasted system prompts or whole third-party catalogs.
 
+## Upstream pass (required)
+
+Before creating or materially editing a skill, open the closest skill in **all five** repos in [docs/SOURCES.md](../../docs/SOURCES.md). Merge the best routing and steps; note skips in the commit. Run `./scripts/check-upstream.sh` when comparing plugin or install layout.
+
 ## Authoring loop (TDD for docs)
 
 1. **RED** — Note how an agent fails without the skill (one scenario).

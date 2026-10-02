@@ -4,4 +4,5 @@ node_modules/
 .env
 .env.*
 .worktrees/
+.upstream/
 *-ledger.md

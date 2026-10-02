@@ -21,6 +21,20 @@ Superskills v1 was consolidated from these public collections. **This repo’s `
 3. Sixteen skills only unless `CONSOLIDATION.md` is deliberately expanded.
 4. Commands and stack live in project `AGENTS.md`, not in skills.
 
+Workflow checklist: [UPSTREAM-WORKFLOW.md](./UPSTREAM-WORKFLOW.md). Quick version check: `./scripts/check-upstream.sh`.
+
+## Plugin packaging (upstream comparison, 2026-10)
+
+| Repo | Manifest | Notable fields | superskills choice |
+|------|----------|----------------|-------------------|
+| obra/superpowers | `.cursor-plugin/plugin.json` | `displayName`, explicit `"skills": "./skills/"`, `hooks` → `hooks-cursor.json` | Took explicit `skills` path + `displayName`; **no hooks v1** (empty stubs removed) |
+| mattpocock/skills | `.claude-plugin/plugin.json` | Lists each skill path in `skills` array | We use **folder discovery** (16 flat dirs); no per-skill manifest list |
+| addyosmani/agent-skills | root `plugin.json` | Minimal name/version/description | Kept richer metadata like superpowers |
+| anthropics/skills | `.claude-plugin/` (varies) | Spec in `spec/`, templates | Skills layout only; no MCP in our plugin |
+| avenoxai/avenoxskills | (skills tree) | Fleet/parallel patterns in skills | No separate plugin manifest copied |
+
+Install docs follow Cursor local plugin copy ([plugins.md](./plugins.md)), aligned with superpowers’ `.cursor-plugin` layout, not Osmani’s root `plugin.json` alone.
+
 ## Attribution when copying
 
 If you paste scripts, prompts, or large sections from an upstream repo into this tree, add a short note in the file header or `references/` with repo name, path, and license. Prefer linking to upstream for maintenance-heavy assets.
