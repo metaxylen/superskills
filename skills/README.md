@@ -13,10 +13,12 @@ See [CONSOLIDATION.md](./CONSOLIDATION.md) for names and roles (Turkish summary 
 
 ## Install
 
-From repo root:
+From repo root (see [docs/plugins.md](../docs/plugins.md)):
 
 ```bash
-./scripts/link-cursor-skills.sh
+./scripts/install-cursor-plugin.sh   # Cursor plugin copy
+# or
+./scripts/link-cursor-skills.sh      # dev symlinks — not both at once
 ```
 
-Do not install placeholder or deleted folders; only directories listed in `CONSOLIDATION.md`.
+Only directories listed in `CONSOLIDATION.md` are part of the plugin.
