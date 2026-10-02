@@ -2,6 +2,17 @@
 
 This file applies to **this repository** (the skill library). Application projects should have their own `AGENTS.md` with stack-specific commands.
 
+## Upstream sources (required before edits)
+
+Do **not** change skills, plugin JSON, or consolidation docs until you have checked counterparts in all five repos listed in [docs/SOURCES.md](docs/SOURCES.md). Record merge/skip decisions in the commit message.
+
+```bash
+./scripts/check-upstream.sh        # versions on GitHub main
+./scripts/check-upstream.sh --clone  # optional local mirrors in .upstream/
+```
+
+Full checklist: [docs/UPSTREAM-WORKFLOW.md](docs/UPSTREAM-WORKFLOW.md).
+
 ## Install in Cursor
 
 **Plugin copy** (see [docs/plugins.md](docs/plugins.md)):

@@ -1,6 +1,8 @@
 # Cursor plugin (superskills)
 
-This repo is a **Cursor Plugin**: manifest at `.cursor-plugin/plugin.json`, skills at `skills/<name>/SKILL.md`. Cursor discovers all sixteen skills automatically; you do not list them in JSON.
+This repo is a **Cursor Plugin**: manifest at `.cursor-plugin/plugin.json`, skills at `skills/<name>/SKILL.md`. Manifest includes `"skills": "./skills/"` (same pattern as [obra/superpowers](https://github.com/obra/superpowers)); Cursor discovers each folder with `SKILL.md`. We do not ship superpowers-style `hooks` in v1.
+
+When changing packaging, run `./scripts/check-upstream.sh` and read [UPSTREAM-WORKFLOW.md](./UPSTREAM-WORKFLOW.md).
 
 ## Install (plugin path)
 

@@ -1,18 +1,23 @@
 {
   "name": "superskills",
+  "displayName": "Superskills",
   "description": "Sixteen agent workflows: routing, planning, TDD, debugging, verification, review, git, worktrees, subagents, and skill authoring.",
   "version": "1.0.0",
   "author": {
     "name": "metaxylen"
   },
+  "homepage": "https://github.com/metaxylen/superskills",
   "repository": "https://github.com/metaxylen/superskills",
   "license": "UNLICENSED",
   "keywords": [
     "agent-skills",
+    "skills",
     "tdd",
     "debugging",
     "code-review",
     "planning",
-    "git"
-  ]
+    "git",
+    "workflows"
+  ],
+  "skills": "./skills/"
 }
