@@ -6,7 +6,8 @@ description: >-
   when executing-plans or subagent-driven-development needs isolation, or the
   user asks for a worktree or separate branch workspace. Do not use when already
   in an isolated worktree, for read-only review, or when the user declined
-  isolation—work in place or use git-workflow-and-versioning only.
+  isolation—work in place or use git-workflow-and-versioning only. Turkish cues:
+  worktree, izole çalışma, ayrı klasör, ana branch temiz kalsın.
 ---
 
 # Using git worktrees

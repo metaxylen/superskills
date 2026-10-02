@@ -7,7 +7,8 @@ description: >-
   doc, or when one request bundles several independently testable capabilities.
   Do not use for typo fixes, approved bounded chat designs ready to code, or
   when a spec file already exists and only execution is needed—use
-  incremental-implementation, writing-plans, or executing-plans instead.
+  incremental-implementation, writing-plans, or executing-plans instead. Turkish
+  cues: spec, spesifikasyon, gereksinim, PRD, kabul kriteri.
 ---
 
 # Spec-driven development

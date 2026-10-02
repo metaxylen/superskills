@@ -1,0 +1,25 @@
+# skill<TAB>trigger substring (case-insensitive match in description)
+dev-router	belirsiz istek
+dev-router	şuna bak
+brainstorming	fikir
+brainstorming	nasıl yap
+writing-plans	plan yaz
+executing-plans	planı uygula
+incremental-implementation	artımlı
+spec-driven-development	gereksinim
+spec-driven-development	spesifikasyon
+test-driven-development	TDD
+test-driven-development	test önce
+systematic-debugging	kök neden
+systematic-debugging	hata ayıkla
+verification-before-completion	bitti mi
+verification-before-completion	doğrula
+code-review-and-quality	PR incele
+code-review-and-quality	code review
+git-workflow-and-versioning	commit
+git-workflow-and-versioning	merge
+using-git-worktrees	worktree
+subagent-driven-development	alt ajan
+using-agent-skills	hangi skill
+writing-skills	skill yaz
+diagnosing-workflow	oturum kötü

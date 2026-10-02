@@ -6,7 +6,8 @@ description: >-
   changing a description for routing, or authoring references scripts. Use when
   the user asks to create a skill, fix skill triggers, or validate SKILL.md.
   Do not use for normal application feature work or debugging product code—use
-  incremental-implementation or systematic-debugging instead.
+  incremental-implementation or systematic-debugging instead. Turkish cues: skill yaz,
+  skill oluştur, description düzelt, tetikleyici.
 ---
 
 # Writing skills
@@ -15,6 +16,7 @@ description: >-
 
 - `skills/<name>/SKILL.md` validates: `name` matches folder; required frontmatter; body under ~500 lines.
 - `description` has **use when** and **do not use when** without overlapping other v1 skills (see `CONSOLIDATION.md`).
+- Optional **Turkish cues:** comma-separated triggers in `description` only (English body).
 - User approved text before commit; `tests/skill-frontmatter` or manual checklist run when available.
 - Symlink target documented in root `README.md` when skill should load in Cursor.
 

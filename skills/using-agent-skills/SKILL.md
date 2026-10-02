@@ -9,7 +9,8 @@ description: >-
   concrete task (bug, failing test, PR or diff review, write tests, plan or
   spec, ship or merge, worktree, subagent)—invoke that specialist or
   dev-router instead. Do not use as a required first step on every message; do
-  not replace dev-router for vague coding requests.
+  not replace dev-router for vague coding requests. Turkish cues: hangi skill,
+  skill nasıl çalışır, superskills, workflow sırası.
 ---
 
 # Using agent skills

@@ -6,7 +6,8 @@ description: >-
   updating a pull request, merging or rebasing, choosing version tags, or when
   implementation is done and integration is next. Use after plans or features
   complete. Do not use for code review commentary only or root-cause debugging—use
-  code-review-and-quality or systematic-debugging instead.
+  code-review-and-quality or systematic-debugging instead. Turkish cues: commit,
+  merge, branch, push, PR aç, bitir, sürüm, tag.
 ---
 
 # Git workflow and versioning

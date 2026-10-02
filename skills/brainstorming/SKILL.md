@@ -8,7 +8,8 @@ description: >-
   approved spec or plan already exists and the user wants execution only,
   when the task is a clear bug with reproduction, or for PR review—use
   writing-plans, executing-plans, systematic-debugging, or
-  code-review-and-quality instead.
+  code-review-and-quality instead. Turkish cues: fikir, nasıl yap, kapsam,
+  netleştir, ne yapacağız, tasarım önce.
 ---
 
 # Brainstorming

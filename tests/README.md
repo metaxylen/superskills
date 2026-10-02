@@ -1,10 +1,13 @@
 # tests/
 
-Placeholder for superskills self-checks.
+## skill-frontmatter
 
-## Planned
+```bash
+./tests/skill-frontmatter.sh
+```
 
-- **skill-frontmatter** — validate `name` matches folder, required YAML keys, description length.
-- **routing-snippets** — optional golden phrases → expected skill (manual or scripted).
+Validates all `skills/*/SKILL.md` frontmatter and Turkish routing snippets in [routing-triggers.tsv](./routing-triggers.tsv).
 
-Until those exist, use the checklist in root [AGENTS.md](../AGENTS.md).
+Add a row to `routing-triggers.tsv` when you add a new Turkish cue (tab-separated: `skill-name`, `substring`).
+
+See also root [AGENTS.md](../AGENTS.md).

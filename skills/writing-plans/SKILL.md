@@ -8,7 +8,7 @@ description: >-
   out. Do not use when the user only wants a quick bounded fix already
   approved in chat, when executing an existing plan, or for debugging—use
   incremental-implementation, executing-plans, or systematic-debugging
-  instead.
+  instead. Turkish cues: plan yaz, uygulama planı, adım adım, görev listesi.
 ---
 
 # Writing plans
