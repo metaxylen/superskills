@@ -68,7 +68,7 @@ One step = one checkable action. Fold scaffolding into the task that needs it.
 
 - **Always:** exact paths; spec travels with the plan; checkbox tasks.
 - **Ask first:** plans that change public API or multiple services without spec approval.
-- **Never:** vague "implement feature" tasks without tests; duplicate Osmani-scale process trees in the plan body.
+- **Never:** vague "implement feature" tasks without tests; oversized process trees in the plan body.
 
 ## Hand off
 

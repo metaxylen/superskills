@@ -32,7 +32,7 @@ Personal [Agent Skills](https://agentskills.io/specification) library for Cursor
 | Path | Purpose |
 |------|---------|
 | `skills/` | v1 skill set — one `SKILL.md` per folder; see `skills/CONSOLIDATION.md` |
-| `docs/` | Sources, specs, and implementation plans for work tracked in this repo |
+| `docs/` | Plugin install, specs, and implementation plans for this repo |
 | `.cursor-plugin/` | Cursor Plugin manifest (`plugin.json`) |
 | `scripts/` | `install-cursor-plugin.sh`, `link-cursor-skills.sh` |
 | `tests/` | Skill validation (frontmatter, routing) when added |
@@ -61,10 +61,6 @@ See [docs/README.md](docs/README.md).
 ./tests/skill-frontmatter.sh
 ```
 
-## Provenance
-
-Merged ideas from five public skill collections; see [docs/SOURCES.md](docs/SOURCES.md). Skill text in this repo is original English; upstream repos are reference only.
-
 ## License
 
-Private personal repo unless you add a `LICENSE` file. Respect upstream licenses if you copy material from sources listed in `docs/SOURCES.md`.
+Private personal repo unless you add a `LICENSE` file.

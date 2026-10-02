@@ -1,8 +1,6 @@
 # Cursor plugin (superskills)
 
-This repo is a **Cursor Plugin**: manifest at `.cursor-plugin/plugin.json`, skills at `skills/<name>/SKILL.md`. Manifest includes `"skills": "./skills/"` (same pattern as [obra/superpowers](https://github.com/obra/superpowers)); Cursor discovers each folder with `SKILL.md`. We do not ship superpowers-style `hooks` in v1.
-
-When changing packaging, run `./scripts/check-upstream.sh` and read [UPSTREAM-WORKFLOW.md](./UPSTREAM-WORKFLOW.md).
+This repo is a **Cursor Plugin**: manifest at `.cursor-plugin/plugin.json`, skills at `skills/<name>/SKILL.md`. The manifest sets `"skills": "./skills/"`; Cursor discovers each subdirectory that contains `SKILL.md`. Hooks and MCP are not part of v1.
 
 ## Install (plugin path)
 
@@ -42,9 +40,10 @@ Targets `~/.cursor/skills/<name>` → `skills/<name>` in the repo.
 
 Using **both** for the same skill names can duplicate skills in the UI and confuse routing. Unlink or remove the other install before switching.
 
-## What we removed (v1)
+## Packaging notes (v1)
 
-Empty stubs for other assistants (`.claude-plugin`, `.codex-plugin`, etc.) were deleted. **Cursor-only** packaging for v1; portable `skills/` remain standard [Agent Skills](https://agentskills.io/specification) markdown.
+- Cursor manifest only; empty multi-assistant plugin stubs were removed from the repo.
+- Skill folders follow the [Agent Skills](https://agentskills.io/specification) layout.
 
 ## Marketplace (later)
 
