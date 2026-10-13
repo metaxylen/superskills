@@ -1,14 +1,11 @@
 ---
 name: diagnosing-workflow
 description: >-
-  Diagnoses a bad agent session with evidence from transcripts—wrong skill,
-  ignored plan, repeated work, false "done", or runaway cost. Use when the user
-  says the session went wrong, wasted time, ignored the plan, used the wrong
-  workflow, or wants a post-mortem on this or a past chat. Do not use for
-  product bugs in application code—use systematic-debugging. Do not use when
-  the user only wants to continue forward work—route with dev-router instead.
-  Turkish cues: oturum kötü, yanlış skill, zaman kaybı, planı dinlemedi,
-  post-mortem.
+  Diagnoses a failed agent session from transcript evidence. Use for wrong
+  skills, ignored plans, repeated work, wasted time, or a session post-mortem.
+  Do not use for application bugs or continuing normal work; use
+  systematic-debugging or dev-router. Turkish cues: oturum kötü, yanlış skill,
+  zaman kaybı, planı dinlemedi, post-mortem.
 ---
 
 # Diagnosing workflow

@@ -3,6 +3,7 @@ limit	quota
 limit	kota
 grilling	grill
 codex-fleet	codex exec
+codex-fleet	run Codex CLI
 code-review	review since
 domain-modeling	glossary
 research	primary source

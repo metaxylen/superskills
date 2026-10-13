@@ -3,7 +3,7 @@ name: code-review
 description: >-
   Review changes since a fixed point (commit, branch, tag, merge-base) on two axes:
   Standards (repo coding standards + smell baseline) and Spec (issue or spec file).
-  Runs parallel sub-agents. Use for "review since main" or standards+spec together.
+  Uses parallel sub-agents when worthwhile. Use for "review since main" or standards+spec together.
   Do not use for a quick diff comment pass—use code-review-and-quality instead.
   Turkish cues: review since, iki eksen, standart ve spec, merge-base.
 ---
@@ -13,7 +13,7 @@ Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
 - **Standards**: does the code conform to this repo's documented coding standards?
 - **Spec**: does the code faithfully implement the originating issue / spec?
 
-Both axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
+Use the [delegation policy](../../skills/subagent-driven-development/references/delegation-policy.md). When worthwhile, run the axes as bounded parallel sub-agents; otherwise review both inline and keep their findings separate. This skill permits useful delegation within that allocation, not mandatory agents for small diffs.
 
 The issue tracker should have been provided to you. If `docs/agents/issue-tracker.md` is missing, tell the user to run `/setup-matt-pocock-skills`.
 
@@ -60,7 +60,9 @@ Each smell reads *what it is* → *how to fix*; match it against the diff:
 - **Middle Man**: a class or function that mostly just delegates onward. → cut it, call the real target direct.
 - **Refused Bequest**: a subclass or implementer that ignores or overrides most of what it inherits. → drop the inheritance, use composition.
 
-### 4. Spawn both sub-agents in parallel
+### 4. Review both axes
+
+Use these briefs for delegated lanes only when the policy gates pass; the primary agent can apply the same checks inline. Skip a delegated lane when its spec/standards inputs are unavailable or it adds no useful independent work.
 
 **Standards sub-agent prompt** should include:
 

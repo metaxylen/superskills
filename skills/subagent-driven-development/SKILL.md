@@ -1,22 +1,20 @@
 ---
 name: subagent-driven-development
 description: >-
-  Executes an implementation plan by dispatching a fresh implementer context per
-  task plus review after each task and a final branch review. Use when a plan
-  has mostly independent tasks and the user wants per-task quality gates or
-  subagents instead of inline executing-plans. Use when parallel lanes are
-  needed for separate tasks. Do not use without a plan file, for a single tiny
-  change, when the user chose inline execution, or when no subagent or Task tool
-  exists—use executing-plans or incremental-implementation instead. Turkish cues:
-  alt ajan, subagent, paralel görev, her task review.
+  Executes an approved plan with subagents and per-task review. Use when the
+  user requests delegation or project instructions authorize agent-chosen
+  delegation; decide whether the work warrants it. Do not use without a
+  plan, for a tiny change, inline execution, or without a subagent tool; use
+  executing-plans or incremental-implementation. Turkish cues: alt ajan,
+  subagent, paralel görev, her task review.
 ---
 
 # Subagent-driven development
 
 ## Done
 
-- Each plan task: implement → task review → ledger entry → next task.
-- Implementers receive a **brief** (task text, files, spec excerpt) — not full chat history.
+- Each plan task: choose inline or delegated work → implement → task review → ledger entry.
+- Implementers receive a **brief** (task text, files, spec excerpt); use fresh context unless essential shared context justifies a history fork under the policy.
 - Final `code-review-and-quality` on the branch diff.
 - `verification-before-completion` before claiming all tasks done.
 
@@ -28,20 +26,20 @@ description: >-
 | Review | After every task | End (plus optional final) |
 | Cost | Higher token use | Lower |
 
-User chose SDD explicitly or tasks are independent and review gates matter.
+Use this workflow when delegation is requested or applicable project instructions authorize the agent to choose it. Before spawning, read [the delegation policy](references/delegation-policy.md); inline execution remains valid when delegation does not justify its cost. Do not use this plan executor for standalone research or review.
 
 ## Setup
 
 1. `using-git-worktrees` if isolation needed.
-2. Read plan + spec; ledger at `<plan-stem>-ledger.md` (first line = plan path).
+2. Read plan + spec; ledger at `<plan-stem>-ledger.md` (first line = plan path). Record the delegation allocation and reserve each child work run before dispatch.
 3. Resume: skip tasks marked complete in ledger.
 
 ## Per task
 
 1. **Brief** — goal, files, acceptance, test command, constraints from spec.
-2. **Implement** — subagent/Task with brief only; `test-driven-development` inside task.
-3. **Task review** — spec match + quality; use `code-review-and-quality` scoped to task diff.
-4. **Fix loop** — bounded rounds; ledger `Ruling:` on plan/spec conflicts.
+2. **Implement** — delegate only if the policy gates pass; otherwise execute inline. Use `test-driven-development` for behavior changes and appropriate checks for documentation/configuration.
+3. **Task review** — the primary agent checks spec match, relevant diff and actual evidence. An additional reviewer subagent needs its own benefit decision and reserved run.
+4. **Fix loop** — bounded by the same allocation, including follow-ups and retries; ledger `Ruling:` on plan/spec conflicts. Finish inline when the delegation allocation is used.
 5. Mark task complete in plan checkboxes and ledger.
 
 Do not pause for "continue?" between tasks unless a stop condition fires.
@@ -51,9 +49,9 @@ Do not pause for "continue?" between tasks unless a stop condition fires.
 When several tasks are **independent** and the host can run background jobs:
 
 - One **worktree per write lane** (`using-git-worktrees`); never two writers on the same checkout.
-- Fire independent lanes in one turn when safe; throughput beats serial waiting.
+- Run only the useful independent lanes within the recorded allocation; concurrency alone does not establish net value.
 - Each lane gets a **complete brief** (spec slice, files, acceptance, test command). Instruction-following runners do not improvise missing scope.
-- Before a large fleet, check subscription headroom; optional `limit` skill if installed.
+- Check exposed subscription headroom before dispatch; optional `limit` skill if installed. Do not invent headroom or auto-launch a large fleet.
 
 External Codex CLI delegation: optional `codex-fleet` skill if installed — action skill, not commentary.
 

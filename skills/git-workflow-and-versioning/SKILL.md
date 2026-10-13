@@ -1,13 +1,11 @@
 ---
 name: git-workflow-and-versioning
 description: >-
-  Guides commits, branches, merge, and finishing work with verification first.
-  Use when committing, splitting messy changes into atomic commits, opening or
-  updating a pull request, merging or rebasing, choosing version tags, or when
-  implementation is done and integration is next. Use after plans or features
-  complete. Do not use for code review commentary only or root-cause debugging—use
-  code-review-and-quality or systematic-debugging instead. Turkish cues: commit,
-  merge, branch, push, PR aç, bitir, sürüm, tag.
+  Handles commits, branches, rebasing, pull request creation, merge, and
+  releases after verification. Use when the user asks to commit, push, open a
+  PR, merge, or cut a release. Do not use for review commentary or root-cause
+  debugging; use code-review-and-quality or systematic-debugging. Turkish
+  cues: commit, merge, branch, push, PR aç, bitir, sürüm, tag.
 ---
 
 # Git workflow and versioning
@@ -22,7 +20,7 @@ description: >-
 ## Principles
 
 - **Trunk-based default** — short-lived branches; `main` stays deployable.
-- **Commit early** — one logical change per commit; ~100 lines target, split if larger.
+- **When commits are requested** — one logical change per commit; split by purpose, not line count.
 - **Separate concerns** — feat vs refactor vs chore in separate commits when practical.
 - **Messages** — `type: summary` + why in body when helpful (`feat`, `fix`, `refactor`, `test`, `docs`, `chore`).
 
@@ -30,7 +28,7 @@ Commands come from project `AGENTS.md`, not hardcoded package managers.
 
 ## During implementation
 
-Pattern: slice → test → verify → commit (`incremental-implementation`).
+Pattern: slice → test → verify (`incremental-implementation`); commit only when the user requested commits.
 
 Do not mix drive-by format refactors with behavior in one commit without user OK.
 
@@ -40,7 +38,7 @@ Do not mix drive-by format refactors with behavior in one commit without user OK
 
 **2. Confirm base** — Branch forked from which base? Ask once if unknown.
 
-**3. Present options** (user chooses):
+**3. Use the user's integration choice** if already explicit. Otherwise present options:
 
 ```
 1. Merge into <base> locally

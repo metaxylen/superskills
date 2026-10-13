@@ -1,13 +1,11 @@
 ---
 name: verification-before-completion
 description: >-
-  Requires fresh command evidence before claiming tests pass, build succeeds, a
-  bug is fixed, or work is done. Use when finishing a task, before commit or
-  push, before opening a PR, or when the user asks if something is ready. Use
-  when an agent or prior message asserted success without pasted output. Do not
-  use as the first step on a new vague task, for routing, or for writing a
-  review of someone else's diff—use dev-router or code-review-and-quality
-  instead. Turkish cues: bitti mi, doğrula, kanıt göster, test geçti mi, hazır mı.
+  Checks fresh evidence before claiming work is ready, tests pass, or a bug is
+  fixed; use at completion or before commit, push, or PR. Do not use for
+  initial routing or review commentary; use dev-router or
+  code-review-and-quality. Turkish cues: bitti mi, doğrula, kanıt göster, test
+  geçti mi, hazır mı.
 ---
 
 # Verification before completion
@@ -27,7 +25,7 @@ NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE
 ## Gate (run before "done", "fixed", "passes", "ready")
 
 1. **Identify** — What command proves the claim?
-2. **Run** — Full command from project `AGENTS.md` (or manifest fallback).
+2. **Run** — Required project gates from `AGENTS.md` (or manifest fallback), plus the check that proves the specific claim.
 3. **Read** — Exit code, failure count, first error if any.
 4. **Match** — Does output support the exact claim?
 5. **Claim** — State result **with** evidence snippet or say what failed.
@@ -44,15 +42,15 @@ Skip a step → the claim is invalid.
 | Bug fixed | Reproduction or regression test green **and** suite per `AGENTS.md` |
 | Task complete | User-visible checklist or acceptance criteria met **and** verification above |
 
-Partial runs, earlier runs, or "should pass" are not evidence.
+A targeted run supports only its stated scope. Output from before the last relevant change, or "should pass", cannot prove the current result. Reuse a completed check when its inputs have not changed; follow stricter project requirements.
 
 ## Red flags — stop
 
 - "Should", "probably", "seems fine"
 - Celebrating before running commands
 - Commit/PR without verification
-- Trusting another agent's success without re-run
-- Linter green but build not run (when build exists)
+- Trusting another agent's success without inspecting its evidence against the current tree
+- Using lint output as evidence that a build succeeds
 
 ## Boundaries
 

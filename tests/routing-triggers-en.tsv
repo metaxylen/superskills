@@ -32,3 +32,21 @@ writing-skills	validate SKILL.md
 writing-skills	fix skill triggers
 diagnosing-workflow	post-mortem
 diagnosing-workflow	wasted time
+# Focused activation phrases retained by the 2026-10-12 description cleanup
+brainstorming	feature intent
+writing-plans	approved requirements
+executing-plans	approved plan
+incremental-implementation	bounded feature
+spec-driven-development	written specification
+test-driven-development	existing failing test
+systematic-debugging	test failures
+verification-before-completion	fresh evidence
+code-review-and-quality	PR feedback
+git-workflow-and-versioning	releases
+using-git-worktrees	concurrent write lanes
+subagent-driven-development	user requests delegation
+subagent-driven-development	agent-chosen
+using-agent-skills	which skill to choose
+writing-skills	tune descriptions
+diagnosing-workflow	transcript evidence
+dev-router	unclear coding request

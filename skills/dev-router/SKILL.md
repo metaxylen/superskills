@@ -1,17 +1,11 @@
 ---
 name: dev-router
 description: >-
-  Routes vague or underspecified software development requests to exactly one
-  superskills specialist. Use when the user wants help on a project but does not
-  name the task type—fixing, planning, reviewing, testing, shipping, or
-  implementing. Use for messages like "take a look", "fix this", "continue",
-  "something broke", or a paste of logs or errors without a clear ask. Do not
-  use when the user already named the task (PR review, write a plan, add tests,
-  debug with root cause, merge branch, worktree, run subagents, or how skills
-  work)—invoke that skill directly. Do not implement code in this skill; only
-  route and hand off. Turkish cues: belirsiz istek, şuna bak, bir bak, düzelt,
-  devam et, ne yapayım, log yapıştırdım. Optional installs: codex exec → codex-fleet;
-  kota → limit (see optional/).
+  Routes an unclear coding request to one specialist. Use for take a look, fix
+  this, or logs without a clear ask. Do not use when the job is identifiable,
+  including something broke with a failure to investigate; invoke the matching
+  specialist. Routes only; does not implement. Turkish cues: belirsiz istek,
+  şuna bak, bir bak, düzelt, devam et, ne yapayım, log yapıştırdım.
 ---
 
 # Dev router
@@ -37,7 +31,8 @@ description: >-
 | Has direction, needs a written step plan | `writing-plans` |
 | Approved plan exists; execute it | `executing-plans` |
 | Small concrete change or "add X" with enough detail | `incremental-implementation` |
-| Explicit spec or acceptance criteria to implement | `spec-driven-development` |
+| Needs a written PRD, requirements doc, or acceptance criteria | `spec-driven-development` |
+| Approved spec exists; needs ordered implementation tasks | `writing-plans` |
 | Wrong behavior, crash, regression, "broken", intermittent bug | `systematic-debugging` |
 | Failing test or build, stack trace, no suspected line yet | `systematic-debugging` |
 | Add or lock in tests, TDD, red-green | `test-driven-development` |
@@ -51,7 +46,7 @@ description: >-
 | Agent environment retro (not a bad-chat post-mortem) | `retro` (optional — `optional/`) |
 | Branch, merge, release, finish this work | `git-workflow-and-versioning` |
 | Parallel worktree or isolate this task | `using-git-worktrees` |
-| Subagents, parallel lanes, delegate chunks | `subagent-driven-development` |
+| Approved plan with requested or project-authorized delegation | `subagent-driven-development` |
 | Run Codex CLI, codex exec, parallel codex lanes | `codex-fleet` (optional — `optional/`) |
 | Usage limit, quota left, how much capacity | `limit` (optional — `optional/`) |
 | Claiming done; need proof before closing | `verification-before-completion` |
@@ -63,7 +58,7 @@ description: >-
 ## Tie-breakers
 
 - Failing test **and** named wrong behavior: `systematic-debugging` first (root cause), then `test-driven-development` if the next step is to add or fix tests.
-- New feature **and** no spec: `brainstorming` before `writing-plans` before implementation skills.
+- New feature with unresolved design: `brainstorming`; explicit written-spec request: `spec-driven-development`. A bounded, concrete request can go directly to `incremental-implementation`.
 - "Fix" with no error detail: `systematic-debugging` unless the user only wants a review of existing changes (`code-review-and-quality`).
 - PR/diff review vs two-axis since fixed point: `code-review-and-quality` for commentary; `code-review` (optional) when Standards and Spec must run in parallel sub-agents.
 - Fresh failure vs stuck diagnosis: `systematic-debugging` first; `diagnosing-bugs` (optional) only when the loop is stuck or user asks to diagnose deeper.
@@ -89,7 +84,7 @@ Then open the skill file and follow it. Do not merge steps from multiple skills 
 ## Boundaries
 
 - **Always:** route to a single skill; read project `AGENTS.md` for commands after handoff.
-- **Ask first:** routing that changes project code or git state.
+- **Ask first:** missing information that prevents choosing a specialist; the handoff itself needs no new approval.
 - **Never:** implement, refactor, or "quickly fix" while routing; never invoke `dev-router` recursively.
 
 ## Output

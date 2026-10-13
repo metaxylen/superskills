@@ -9,6 +9,8 @@ Not part of the v1 sixteen in `skills/`. Link alongside superskills.
 | `codex-fleet` | Codex CLI (`codex exec`), parallel lanes, worktree writes, images |
 | `limit` | Claude + Codex subscription usage before large delegate runs |
 
+`codex-fleet/SKILL.md` selects the workflow; `codex-fleet/references/` holds runtime defaults, CLI tasks, image inputs, image generation, and fleet details. The directory symlink includes these files; no additional install step is needed.
+
 ## Design and planning
 
 | Skill | Use when |
@@ -52,3 +54,5 @@ Links into `~/.cursor/skills/`, `~/.claude/skills/`, and `~/.agents/skills/`.
 ## License
 
 MIT vendored components: [LICENSE-MIT-vendor.txt](./LICENSE-MIT-vendor.txt), [LICENSE-MIT-mattpocock.txt](./LICENSE-MIT-mattpocock.txt).
+
+`codex-fleet` is third-party work by [Avenox](https://avenox.lol), distributed with the note "Share freely" and no formal license text. Attribution is kept in its `SKILL.md`; confirm terms with the author before redistributing it beyond personal use.

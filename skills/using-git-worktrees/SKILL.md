@@ -1,13 +1,11 @@
 ---
 name: using-git-worktrees
 description: >-
-  Creates or reuses an isolated git worktree before feature work or plan
-  execution. Use when implementation should not touch the current checkout,
-  when executing-plans or subagent-driven-development needs isolation, or the
-  user asks for a worktree or separate branch workspace. Do not use when already
-  in an isolated worktree, for read-only review, or when the user declined
-  isolation—work in place or use git-workflow-and-versioning only. Turkish cues:
-  worktree, izole çalışma, ayrı klasör, ana branch temiz kalsın.
+  Creates or reuses an isolated worktree for a separate branch workspace. Use
+  when the user requests isolation or concurrent write lanes need it. Do not
+  use for read-only review, an already isolated checkout, or when isolation
+  was declined. Turkish cues: worktree, izole çalışma, ayrı klasör, ana branch
+  temiz kalsın.
 ---
 
 # Using git worktrees
@@ -39,7 +37,7 @@ Honor decline — skip creation, still use a feature branch if possible.
 
 1. Prefer the editor's native worktree command if available.
 2. Else git fallback:
-   - Directory: `.worktrees/` (default) — must be `git check-ignore` clean; add to `.gitignore` and commit if needed.
+   - Directory: `.worktrees/` (default) — verify it is ignored with `git check-ignore`; add an ignore entry if needed, and commit it only when the user requested commits.
    - `git worktree add .worktrees/<branch> -b <branch>`
    - `cd` into the worktree.
 

@@ -1,15 +1,12 @@
 ---
 name: systematic-debugging
 description: >-
-  Finds root cause before any fix for bugs, test failures, build breaks, or
-  unexpected behavior. Use when something is broken, failing, slow, or
-  regressed, when logs or stack traces are pasted, or when a previous fix did
-  not hold. Use before editing production code for diagnosis. Do not use for PR
-  or diff review without a failure to investigate, for writing a new feature
-  from scratch, for authoring a plan only, or when the user only wants tests
-  added without a failing case yet—use code-review-and-quality,
-  brainstorming, writing-plans, or test-driven-development instead. Turkish cues:
-  hata ayıkla, debug, bozuldu, çöküyor, kök neden, stack trace, log.
+  Finds root cause and fixes bugs, test failures, or regressions. Use for
+  wrong behavior, a stack trace, or a fix that did not hold. Do not use for
+  review, new features, or tests without a failure; use
+  code-review-and-quality, incremental-implementation, or
+  test-driven-development. Turkish cues: hata ayıkla, debug, bozuldu, çöküyor,
+  kök neden, stack trace, log.
 ---
 
 # Systematic debugging

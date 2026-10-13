@@ -105,6 +105,10 @@ Use `writing-plans` / `executing-plans` / `subagent-driven-development` when the
 
 ---
 
+## Delegation
+
+Autonomous subagent use is requested here only when the [delegation benefit and budget gates](skills/subagent-driven-development/references/delegation-policy.md) pass. Default to inline work; share at most two child work runs across the whole requested objective, including plan tasks, research, review, follow-ups and resumed sessions. Explicit inline-only requests and host restrictions take precedence. Keep the primary specialist for the task; delegation is an execution choice, not a reason to switch every task to the plan-execution skill.
+
 ## Conventions (this repo)
 
 - **v1 count stays sixteen** unless the user explicitly expands the set; then update `CONSOLIDATION.md`, `skill_frontmatter.py` `EXPECTED_COUNT`, plugin copy, and routing tests together.

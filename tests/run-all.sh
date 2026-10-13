@@ -6,3 +6,4 @@ cd "$ROOT"
 python3 ./tests/routing_eval.py
 python3 ./tests/router_integrity.py
 python3 ./tests/routing_scenarios.py
+python3 ./tests/loop_agent_eval.py --self-test

@@ -1,24 +1,21 @@
 ---
 name: writing-plans
 description: >-
-  Turns an approved spec or requirements into a bite-sized implementation
-  plan with files, steps, and tests. Use when brainstorming or the user
-  provided a spec and multi-step work is next, before writing production
-  code. Use when tasks need ordering, checkpoints, or TDD steps spelled
-  out. Do not use when the user only wants a quick bounded fix already
-  approved in chat, when executing an existing plan, or for debugging—use
-  incremental-implementation, executing-plans, or systematic-debugging
-  instead. Turkish cues: plan yaz, uygulama planı, adım adım, görev listesi.
+  Writes an implementation plan from approved requirements. Use when
+  multi-step work needs ordered tasks, files, and verification. Do not use for
+  a bounded fix, executing an existing plan, or debugging; use
+  incremental-implementation, executing-plans, or systematic-debugging.
+  Turkish cues: plan yaz, uygulama planı, adım adım, görev listesi.
 ---
 
 # Writing plans
 
 ## Done
 
-- Plan saved under `docs/superskills/plans/YYYY-MM-DD-<feature>.md` (user may override path).
+- Plan saved at the project's plan path; in superskills use `docs/superskills/plans/YYYY-MM-DD-<feature>.md` unless the user overrides it.
 - Header includes goal, architecture summary, spec link, and global constraints copied verbatim.
 - Tasks are right-sized: each ends with an independently testable deliverable.
-- Steps include explicit TDD beats where behavior changes (fail → pass → suite).
+- Behavior changes include a failing test and verification; documentation or configuration tasks use their relevant checks.
 - Executor named: `executing-plans` (inline) or `subagent-driven-development` (per-task gates).
 
 ## Before tasks
@@ -56,8 +53,8 @@ description: >-
 - [ ] Run test — expect failure: …
 - [ ] Implement minimal change
 - [ ] Run test — expect pass
-- [ ] Run suite per AGENTS.md — expect: …
-- [ ] Commit (if plan says so)
+- [ ] Run affected checks and required AGENTS.md gates — expect: …
+- [ ] Commit (only if the user requested commits)
 
 **Completion:** …
 ```
@@ -77,7 +74,7 @@ Tell the user which executor skill to invoke and the plan path. Do not start imp
 ## Output
 
 ```
-Plan: docs/superskills/plans/<file>.md
+Plan: <project plan path>
 Tasks: <N>
 Executor: executing-plans | subagent-driven-development
 Ready: yes — invoke <executor> after user confirms

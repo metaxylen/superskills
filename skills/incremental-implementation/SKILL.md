@@ -1,15 +1,11 @@
 ---
 name: incremental-implementation
 description: >-
-  Delivers multi-file changes in thin vertical slices with test and verify
-  between slices. Use when implementing a bounded feature or plan task,
-  when more than one file changes, or when tempted to write a large batch
-  before running tests. Use for rollout slices or contract-first API work.
-  Do not use for a single-line fix, when a full spec does not exist yet and
-  scope is still fuzzy, or when only planning or debugging—use
-  brainstorming, writing-plans, systematic-debugging, or
-  test-driven-development for single-behavior TDD cycles instead. Turkish cues:
-  artımlı, küçük adım, ince dilim, çok dosya değişecek.
+  Implements a bounded feature or plan task in vertical slices with
+  verification between slices. Do not use for unresolved requirements,
+  planning only, or root-cause investigation; use brainstorming,
+  writing-plans, or systematic-debugging. Turkish cues: artımlı, küçük adım,
+  ince dilim, çok dosya değişecek.
 ---
 
 # Incremental implementation
@@ -18,13 +14,13 @@ description: >-
 
 - Each slice leaves the repo buildable and tests green per `AGENTS.md`.
 - Slices are vertical (end-to-end path) unless contract-first explicitly chosen.
-- No slice larger than ~100 lines without a test run (guideline, not law).
-- Commits follow `git-workflow-and-versioning` (atomic, one logical change).
+- Each slice has one verifiable outcome; its boundary follows behavior and risk, not a line count.
+- If the user requested commits, follow `git-workflow-and-versioning` (one logical change).
 
 ## The cycle
 
 ```
-Implement smallest slice → Test → Verify → Commit → Next slice
+Implement smallest slice → Run affected checks → Verify → Next slice
 ```
 
 Use `test-driven-development` within a slice when behavior changes.
@@ -47,9 +43,9 @@ Before coding: "What is the simplest thing that could work?" After: fewer lines,
 
 ## Boundaries
 
-- **Always:** run verification command after each slice; commit at known-good points.
+- **Always:** verify each slice; run required project gates before completion; commit only when requested.
 - **Ask first:** schema migrations; public API changes; deleting code paths users rely on.
-- **Never:** giant uncommitted batches; mixing refactor + feature in one slice without plan.
+- **Never:** mix unrelated refactors and features in one slice.
 
 ## Output
 
@@ -57,6 +53,6 @@ Before coding: "What is the simplest thing that could work?" After: fewer lines,
 Slice: <n> — <name>
 Files: <list>
 Tests: <command> — <summary>
-Commit: <hash or message>
+Commit: <hash if requested, otherwise not requested>
 Remaining: <next slice or done>
 ```

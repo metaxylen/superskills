@@ -6,7 +6,7 @@ description: >-
   Turkish cues: araştır, primary source, dokümana yaz, resmi dokümantasyon.
 ---
 
-Spin up a **background agent** to do the research, so you keep working while it reads.
+Use the [delegation policy](../../skills/subagent-driven-development/references/delegation-policy.md) to choose inline research or one bounded background investigation. Delegate only when worthwhile and authorized, with a concise source/task brief and available allowance; otherwise investigate directly. Keep the research specialist; no implementation plan is needed. This skill permits that bounded background investigation, not an automatic agent for every lookup.
 
 Its job:
 

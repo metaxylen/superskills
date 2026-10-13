@@ -1,0 +1,3653 @@
+{
+  "selected_trials": [
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "budget",
+      "elapsed_seconds": 43.55,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 7132,
+        "cache_read_input_tokens": 89150,
+        "output_tokens": 2693,
+        "output_tokens_details": {
+          "thinking_tokens": 148
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7132,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 662,
+            "cache_read_input_tokens": 10806,
+            "cache_creation_input_tokens": 1017,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1017
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "ordinary",
+      "elapsed_seconds": 30.76,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 6335,
+        "cache_read_input_tokens": 54217,
+        "output_tokens": 2634,
+        "output_tokens_details": {
+          "thinking_tokens": 181
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6335,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 486,
+            "cache_read_input_tokens": 10157,
+            "cache_creation_input_tokens": 869,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 869
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 34.43,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 8215,
+        "cache_read_input_tokens": 59863,
+        "output_tokens": 2564,
+        "output_tokens_details": {
+          "thinking_tokens": 106
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8215,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 531,
+            "cache_read_input_tokens": 12171,
+            "cache_creation_input_tokens": 735,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 735
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "resume",
+      "elapsed_seconds": 75.77,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 6982,
+        "cache_read_input_tokens": 78963,
+        "output_tokens": 2448,
+        "output_tokens_details": {
+          "thinking_tokens": 199
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6982,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 504,
+            "cache_read_input_tokens": 10816,
+            "cache_creation_input_tokens": 857,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 857
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "second-pass",
+      "elapsed_seconds": 42.47,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 9737,
+        "cache_read_input_tokens": 102053,
+        "output_tokens": 3756,
+        "output_tokens_details": {
+          "thinking_tokens": 158
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9737,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 670,
+            "cache_read_input_tokens": 14254,
+            "cache_creation_input_tokens": 174,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 174
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 35.25,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 8105,
+        "cache_read_input_tokens": 74376,
+        "output_tokens": 2836,
+        "output_tokens_details": {
+          "thinking_tokens": 33
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8105,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 527,
+            "cache_read_input_tokens": 11057,
+            "cache_creation_input_tokens": 263,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 263
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "stalled",
+      "elapsed_seconds": 37.25,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 7669,
+        "cache_read_input_tokens": 80298,
+        "output_tokens": 3212,
+        "output_tokens_details": {
+          "thinking_tokens": 504
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7669,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 664,
+            "cache_read_input_tokens": 12069,
+            "cache_creation_input_tokens": 291,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 291
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "budget",
+      "elapsed_seconds": 38.94,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8674,
+        "cache_read_input_tokens": 69048,
+        "output_tokens": 3265,
+        "output_tokens_details": {
+          "thinking_tokens": 87
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8674,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 684,
+            "cache_read_input_tokens": 11648,
+            "cache_creation_input_tokens": 1717,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1717
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "ordinary",
+      "elapsed_seconds": 30.37,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 6322,
+        "cache_read_input_tokens": 54139,
+        "output_tokens": 2763,
+        "output_tokens_details": {
+          "thinking_tokens": 247
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6322,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 608,
+            "cache_read_input_tokens": 10156,
+            "cache_creation_input_tokens": 857,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 857
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 34.17,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8132,
+        "cache_read_input_tokens": 70713,
+        "output_tokens": 2998,
+        "output_tokens_details": {
+          "thinking_tokens": 75
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8132,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 580,
+            "cache_read_input_tokens": 12388,
+            "cache_creation_input_tokens": 435,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 435
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 4,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "resume",
+      "elapsed_seconds": 31.93,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 7613,
+        "cache_read_input_tokens": 58238,
+        "output_tokens": 2922,
+        "output_tokens_details": {
+          "thinking_tokens": 161
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7613,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 683,
+            "cache_read_input_tokens": 11322,
+            "cache_creation_input_tokens": 982,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 982
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "second-pass",
+      "elapsed_seconds": 46.13,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 24,
+        "cache_creation_input_tokens": 8728,
+        "cache_read_input_tokens": 116075,
+        "output_tokens": 3820,
+        "output_tokens_details": {
+          "thinking_tokens": 327
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8728,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 517,
+            "cache_read_input_tokens": 13106,
+            "cache_creation_input_tokens": 313,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 313
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 36.62,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8253,
+        "cache_read_input_tokens": 71548,
+        "output_tokens": 3145,
+        "output_tokens_details": {
+          "thinking_tokens": 113
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8253,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 727,
+            "cache_read_input_tokens": 12277,
+            "cache_creation_input_tokens": 667,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 667
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "stalled",
+      "elapsed_seconds": 43.27,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 9648,
+        "cache_read_input_tokens": 80676,
+        "output_tokens": 3496,
+        "output_tokens_details": {
+          "thinking_tokens": 612
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9648,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 768,
+            "cache_read_input_tokens": 14066,
+            "cache_creation_input_tokens": 273,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 273
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "budget",
+      "elapsed_seconds": 45.91,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 9549,
+        "cache_read_input_tokens": 99035,
+        "output_tokens": 4451,
+        "output_tokens_details": {
+          "thinking_tokens": 338
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9549,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 747,
+            "cache_read_input_tokens": 13758,
+            "cache_creation_input_tokens": 482,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 482
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "ordinary",
+      "elapsed_seconds": 30.79,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 6365,
+        "cache_read_input_tokens": 64924,
+        "output_tokens": 2660,
+        "output_tokens_details": {
+          "thinking_tokens": 175
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6365,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 462,
+            "cache_read_input_tokens": 10923,
+            "cache_creation_input_tokens": 133,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 133
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 51.8,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8576,
+        "cache_read_input_tokens": 68731,
+        "output_tokens": 3091,
+        "output_tokens_details": {
+          "thinking_tokens": 305
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8576,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 615,
+            "cache_read_input_tokens": 12363,
+            "cache_creation_input_tokens": 904,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 904
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "resume",
+      "elapsed_seconds": 36.81,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8613,
+        "cache_read_input_tokens": 75118,
+        "output_tokens": 3231,
+        "output_tokens_details": {
+          "thinking_tokens": 578
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8613,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 603,
+            "cache_read_input_tokens": 13122,
+            "cache_creation_input_tokens": 182,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 182
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "second-pass",
+      "elapsed_seconds": 46.59,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 22,
+        "cache_creation_input_tokens": 10687,
+        "cache_read_input_tokens": 116668,
+        "output_tokens": 4235,
+        "output_tokens_details": {
+          "thinking_tokens": 236
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 10687,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 602,
+            "cache_read_input_tokens": 15015,
+            "cache_creation_input_tokens": 363,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 363
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 49.49,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 9519,
+        "cache_read_input_tokens": 89291,
+        "output_tokens": 3351,
+        "output_tokens_details": {
+          "thinking_tokens": 190
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9519,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 611,
+            "cache_read_input_tokens": 14017,
+            "cache_creation_input_tokens": 193,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 193
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "stalled",
+      "elapsed_seconds": 54.78,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 22,
+        "cache_creation_input_tokens": 11084,
+        "cache_read_input_tokens": 117431,
+        "output_tokens": 5273,
+        "output_tokens_details": {
+          "thinking_tokens": 753
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11084,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 709,
+            "cache_read_input_tokens": 15361,
+            "cache_creation_input_tokens": 414,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 414
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "budget",
+      "elapsed_seconds": 50.0,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 197305,
+        "cached_input_tokens": 186752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1152,
+        "reasoning_output_tokens": 16
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "ordinary",
+      "elapsed_seconds": 30.2,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 114776,
+        "cached_input_tokens": 105856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 750,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 49.96,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 209285,
+        "cached_input_tokens": 197376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1022,
+        "reasoning_output_tokens": 8
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 4,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "resume",
+      "elapsed_seconds": 66.28,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 116270,
+        "cached_input_tokens": 107136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 803,
+        "reasoning_output_tokens": 11
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "second-pass",
+      "elapsed_seconds": 41.32,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 142567,
+        "cached_input_tokens": 131712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1093,
+        "reasoning_output_tokens": 13
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 47.97,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 165040,
+        "cached_input_tokens": 141312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1085,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "stalled",
+      "elapsed_seconds": 42.4,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 157832,
+        "cached_input_tokens": 147840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 777,
+        "reasoning_output_tokens": 28
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "budget",
+      "elapsed_seconds": 47.86,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 181891,
+        "cached_input_tokens": 171008,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1185,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "ordinary",
+      "elapsed_seconds": 32.15,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 115017,
+        "cached_input_tokens": 105984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 702,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 56.31,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 191728,
+        "cached_input_tokens": 150144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1079,
+        "reasoning_output_tokens": 9
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "resume",
+      "elapsed_seconds": 36.04,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 139171,
+        "cached_input_tokens": 109312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 875,
+        "reasoning_output_tokens": 15
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "second-pass",
+      "elapsed_seconds": 52.21,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 207580,
+        "cached_input_tokens": 195072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1334,
+        "reasoning_output_tokens": 24
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 46.11,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150524,
+        "cached_input_tokens": 132352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1157,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stalled",
+      "elapsed_seconds": 49.27,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 144874,
+        "cached_input_tokens": 132864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1408,
+        "reasoning_output_tokens": 37
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "budget",
+      "elapsed_seconds": 55.6,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 185533,
+        "cached_input_tokens": 174208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1220,
+        "reasoning_output_tokens": 9
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "ordinary",
+      "elapsed_seconds": 27.0,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 114010,
+        "cached_input_tokens": 105216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 703,
+        "reasoning_output_tokens": 28
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 69.79,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 148316,
+        "cached_input_tokens": 129408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1220,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "resume",
+      "elapsed_seconds": 54.04,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 143443,
+        "cached_input_tokens": 124288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1242,
+        "reasoning_output_tokens": 8
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "second-pass",
+      "elapsed_seconds": 52.51,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 123274,
+        "cached_input_tokens": 112128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1410,
+        "reasoning_output_tokens": 18
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 54.22,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150295,
+        "cached_input_tokens": 137472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1234,
+        "reasoning_output_tokens": 11
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stalled",
+      "elapsed_seconds": 64.59,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 144950,
+        "cached_input_tokens": 132480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1363,
+        "reasoning_output_tokens": 21
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    }
+  ],
+  "all_recorded_attempts": [
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "ordinary",
+      "elapsed_seconds": 30.2,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 114776,
+        "cached_input_tokens": 105856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 750,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "ordinary",
+      "elapsed_seconds": 30.76,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 6335,
+        "cache_read_input_tokens": 54217,
+        "output_tokens": 2634,
+        "output_tokens_details": {
+          "thinking_tokens": 181
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6335,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 486,
+            "cache_read_input_tokens": 10157,
+            "cache_creation_input_tokens": 869,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 869
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "ordinary",
+      "elapsed_seconds": 30.37,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 6322,
+        "cache_read_input_tokens": 54139,
+        "output_tokens": 2763,
+        "output_tokens_details": {
+          "thinking_tokens": 247
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6322,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 608,
+            "cache_read_input_tokens": 10156,
+            "cache_creation_input_tokens": 857,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 857
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "ordinary",
+      "elapsed_seconds": 32.15,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 115017,
+        "cached_input_tokens": 105984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 702,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "second-pass",
+      "elapsed_seconds": 41.32,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 142567,
+        "cached_input_tokens": 131712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1093,
+        "reasoning_output_tokens": 13
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "second-pass",
+      "elapsed_seconds": 42.47,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 9737,
+        "cache_read_input_tokens": 102053,
+        "output_tokens": 3756,
+        "output_tokens_details": {
+          "thinking_tokens": 158
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9737,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 670,
+            "cache_read_input_tokens": 14254,
+            "cache_creation_input_tokens": 174,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 174
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "second-pass",
+      "elapsed_seconds": 46.13,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 24,
+        "cache_creation_input_tokens": 8728,
+        "cache_read_input_tokens": 116075,
+        "output_tokens": 3820,
+        "output_tokens_details": {
+          "thinking_tokens": 327
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8728,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 517,
+            "cache_read_input_tokens": 13106,
+            "cache_creation_input_tokens": 313,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 313
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "second-pass",
+      "elapsed_seconds": 52.21,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 207580,
+        "cached_input_tokens": 195072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1334,
+        "reasoning_output_tokens": 24
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "budget",
+      "elapsed_seconds": 43.55,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 7132,
+        "cache_read_input_tokens": 89150,
+        "output_tokens": 2693,
+        "output_tokens_details": {
+          "thinking_tokens": 148
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7132,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 662,
+            "cache_read_input_tokens": 10806,
+            "cache_creation_input_tokens": 1017,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1017
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "budget",
+      "elapsed_seconds": 50.0,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 197305,
+        "cached_input_tokens": 186752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1152,
+        "reasoning_output_tokens": 16
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "budget",
+      "elapsed_seconds": 38.94,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8674,
+        "cache_read_input_tokens": 69048,
+        "output_tokens": 3265,
+        "output_tokens_details": {
+          "thinking_tokens": 87
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8674,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 684,
+            "cache_read_input_tokens": 11648,
+            "cache_creation_input_tokens": 1717,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1717
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "budget",
+      "elapsed_seconds": 47.86,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 181891,
+        "cached_input_tokens": 171008,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1185,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "resume",
+      "elapsed_seconds": 66.28,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 116270,
+        "cached_input_tokens": 107136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 803,
+        "reasoning_output_tokens": 11
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "resume",
+      "elapsed_seconds": 75.77,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 6982,
+        "cache_read_input_tokens": 78963,
+        "output_tokens": 2448,
+        "output_tokens_details": {
+          "thinking_tokens": 199
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6982,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 504,
+            "cache_read_input_tokens": 10816,
+            "cache_creation_input_tokens": 857,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 857
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "resume",
+      "elapsed_seconds": 36.04,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 139171,
+        "cached_input_tokens": 109312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 875,
+        "reasoning_output_tokens": 15
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "resume",
+      "elapsed_seconds": 31.93,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 7613,
+        "cache_read_input_tokens": 58238,
+        "output_tokens": 2922,
+        "output_tokens_details": {
+          "thinking_tokens": 161
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7613,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 683,
+            "cache_read_input_tokens": 11322,
+            "cache_creation_input_tokens": 982,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 982
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "stalled",
+      "elapsed_seconds": 42.4,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 157832,
+        "cached_input_tokens": 147840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 777,
+        "reasoning_output_tokens": 28
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "stalled",
+      "elapsed_seconds": 37.25,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 7669,
+        "cache_read_input_tokens": 80298,
+        "output_tokens": 3212,
+        "output_tokens_details": {
+          "thinking_tokens": 504
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7669,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 664,
+            "cache_read_input_tokens": 12069,
+            "cache_creation_input_tokens": 291,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 291
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stalled",
+      "elapsed_seconds": 49.27,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 144874,
+        "cached_input_tokens": 132864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1408,
+        "reasoning_output_tokens": 37
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "stalled",
+      "elapsed_seconds": 43.27,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 9648,
+        "cache_read_input_tokens": 80676,
+        "output_tokens": 3496,
+        "output_tokens_details": {
+          "thinking_tokens": 612
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9648,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 768,
+            "cache_read_input_tokens": 14066,
+            "cache_creation_input_tokens": 273,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 273
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 37.04,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 123306,
+        "cached_input_tokens": 104064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1191,
+        "reasoning_output_tokens": 51
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 48.19,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 8656,
+        "cache_read_input_tokens": 93307,
+        "output_tokens": 3021,
+        "output_tokens_details": {
+          "thinking_tokens": 277
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8656,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 561,
+            "cache_read_input_tokens": 13222,
+            "cache_creation_input_tokens": 125,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 125
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 26.0,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 3.37,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 33.53,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 7369,
+        "cache_read_input_tokens": 56290,
+        "output_tokens": 2936,
+        "output_tokens_details": {
+          "thinking_tokens": 239
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 7369,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 649,
+            "cache_read_input_tokens": 11076,
+            "cache_creation_input_tokens": 984,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 984
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 3.56,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 33.79,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8931,
+        "cache_read_input_tokens": 74745,
+        "output_tokens": 2977,
+        "output_tokens_details": {
+          "thinking_tokens": 217
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8931,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 528,
+            "cache_read_input_tokens": 13454,
+            "cache_creation_input_tokens": 168,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 168
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 4,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 34.16,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8361,
+        "cache_read_input_tokens": 71436,
+        "output_tokens": 3147,
+        "output_tokens_details": {
+          "thinking_tokens": 340
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8361,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 549,
+            "cache_read_input_tokens": 12782,
+            "cache_creation_input_tokens": 270,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 270
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-fixed"
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "ordinary",
+      "elapsed_seconds": 27.0,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 114010,
+        "cached_input_tokens": 105216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 703,
+        "reasoning_output_tokens": 28
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "ordinary",
+      "elapsed_seconds": 30.79,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 6365,
+        "cache_read_input_tokens": 64924,
+        "output_tokens": 2660,
+        "output_tokens_details": {
+          "thinking_tokens": 175
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6365,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 462,
+            "cache_read_input_tokens": 10923,
+            "cache_creation_input_tokens": 133,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 133
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "second-pass",
+      "elapsed_seconds": 11.14,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "budget",
+      "elapsed_seconds": 4.18,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "second-pass",
+      "elapsed_seconds": 46.59,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 22,
+        "cache_creation_input_tokens": 10687,
+        "cache_read_input_tokens": 116668,
+        "output_tokens": 4235,
+        "output_tokens_details": {
+          "thinking_tokens": 236
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 10687,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 602,
+            "cache_read_input_tokens": 15015,
+            "cache_creation_input_tokens": 363,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 363
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "resume",
+      "elapsed_seconds": 3.93,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "budget",
+      "elapsed_seconds": 45.91,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 9549,
+        "cache_read_input_tokens": 99035,
+        "output_tokens": 4451,
+        "output_tokens_details": {
+          "thinking_tokens": 338
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9549,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 747,
+            "cache_read_input_tokens": 13758,
+            "cache_creation_input_tokens": 482,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 482
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stalled",
+      "elapsed_seconds": 4.22,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "resume",
+      "elapsed_seconds": 36.81,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8613,
+        "cache_read_input_tokens": 75118,
+        "output_tokens": 3231,
+        "output_tokens_details": {
+          "thinking_tokens": 578
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8613,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 603,
+            "cache_read_input_tokens": 13122,
+            "cache_creation_input_tokens": 182,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 182
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 4.34,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "stalled",
+      "elapsed_seconds": 54.78,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 22,
+        "cache_creation_input_tokens": 11084,
+        "cache_read_input_tokens": 117431,
+        "output_tokens": 5273,
+        "output_tokens_details": {
+          "thinking_tokens": 753
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 11084,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 709,
+            "cache_read_input_tokens": 15361,
+            "cache_creation_input_tokens": 414,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 414
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 4.09,
+      "exit_code": 1,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": null,
+      "pass": false,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 0,
+      "acceptance": false,
+      "infrastructure_failure": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 51.73,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 20,
+        "cache_creation_input_tokens": 9717,
+        "cache_read_input_tokens": 100327,
+        "output_tokens": 3806,
+        "output_tokens_details": {
+          "thinking_tokens": 246
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9717,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 568,
+            "cache_read_input_tokens": 13661,
+            "cache_creation_input_tokens": 747,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 747
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 30.78,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 8834,
+        "cache_read_input_tokens": 61594,
+        "output_tokens": 2824,
+        "output_tokens_details": {
+          "thinking_tokens": 243
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8834,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 534,
+            "cache_read_input_tokens": 12615,
+            "cache_creation_input_tokens": 910,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 910
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-v2"
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 53.49,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 186723,
+        "cached_input_tokens": 152960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1003,
+        "reasoning_output_tokens": 10
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-retry"
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 58.65,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150580,
+        "cached_input_tokens": 132992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1447,
+        "reasoning_output_tokens": 38
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-retry"
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 55.66,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 171067,
+        "cached_input_tokens": 148224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1247,
+        "reasoning_output_tokens": 16
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round1-retry"
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "second-pass",
+      "elapsed_seconds": 52.51,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 123274,
+        "cached_input_tokens": 112128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1410,
+        "reasoning_output_tokens": 18
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "budget",
+      "elapsed_seconds": 55.6,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 185533,
+        "cached_input_tokens": 174208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1220,
+        "reasoning_output_tokens": 9
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 2,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "resume",
+      "elapsed_seconds": 54.04,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 143443,
+        "cached_input_tokens": 124288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1242,
+        "reasoning_output_tokens": 8
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stalled",
+      "elapsed_seconds": 64.59,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 144950,
+        "cached_input_tokens": 132480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1363,
+        "reasoning_output_tokens": 21
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 1,
+      "agent_checks": 1,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 61.23,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150436,
+        "cached_input_tokens": 137472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1327,
+        "reasoning_output_tokens": 34
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry"
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 50.91,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 151023,
+        "cached_input_tokens": 133120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1233,
+        "reasoning_output_tokens": 16
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-round2-retry"
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 35.25,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 8105,
+        "cache_read_input_tokens": 74376,
+        "output_tokens": 2836,
+        "output_tokens_details": {
+          "thinking_tokens": 33
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8105,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 527,
+            "cache_read_input_tokens": 11057,
+            "cache_creation_input_tokens": 263,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 263
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "stale",
+      "elapsed_seconds": 47.97,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 165040,
+        "cached_input_tokens": 141312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1085,
+        "reasoning_output_tokens": 14
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 46.11,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150524,
+        "cached_input_tokens": 132352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1157,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "stale",
+      "elapsed_seconds": 36.62,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8253,
+        "cache_read_input_tokens": 71548,
+        "output_tokens": 3145,
+        "output_tokens_details": {
+          "thinking_tokens": 113
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8253,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 727,
+            "cache_read_input_tokens": 12277,
+            "cache_creation_input_tokens": 667,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 667
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 49.49,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 18,
+        "cache_creation_input_tokens": 9519,
+        "cache_read_input_tokens": 89291,
+        "output_tokens": 3351,
+        "output_tokens_details": {
+          "thinking_tokens": 190
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 9519,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 611,
+            "cache_read_input_tokens": 14017,
+            "cache_creation_input_tokens": 193,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 193
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "stale",
+      "elapsed_seconds": 54.22,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 150295,
+        "cached_input_tokens": 137472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1234,
+        "reasoning_output_tokens": 11
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 34.43,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 14,
+        "cache_creation_input_tokens": 8215,
+        "cache_read_input_tokens": 59863,
+        "output_tokens": 2564,
+        "output_tokens_details": {
+          "thinking_tokens": 106
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8215,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 531,
+            "cache_read_input_tokens": 12171,
+            "cache_creation_input_tokens": 735,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 735
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "baseline",
+      "case": "partial",
+      "elapsed_seconds": 49.96,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 209285,
+        "cached_input_tokens": 197376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1022,
+        "reasoning_output_tokens": 8
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 4,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 34.17,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8132,
+        "cache_read_input_tokens": 70713,
+        "output_tokens": 2998,
+        "output_tokens_details": {
+          "thinking_tokens": 75
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8132,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 580,
+            "cache_read_input_tokens": 12388,
+            "cache_creation_input_tokens": 435,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 435
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 4,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v1",
+      "case": "partial",
+      "elapsed_seconds": 56.31,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 191728,
+        "cached_input_tokens": 150144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1079,
+        "reasoning_output_tokens": 9
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "claude",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 51.8,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 16,
+        "cache_creation_input_tokens": 8576,
+        "cache_read_input_tokens": 68731,
+        "output_tokens": 3091,
+        "output_tokens_details": {
+          "thinking_tokens": 305
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 8576,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 615,
+            "cache_read_input_tokens": 12363,
+            "cache_creation_input_tokens": 904,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 904
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 3,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    },
+    {
+      "platform": "codex",
+      "variant": "v2",
+      "case": "partial",
+      "elapsed_seconds": 69.79,
+      "exit_code": 0,
+      "transport": "finished",
+      "model": "gpt-6-astra",
+      "usage": {
+        "input_tokens": 148316,
+        "cached_input_tokens": 129408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1220,
+        "reasoning_output_tokens": 12
+      },
+      "pass": true,
+      "protected_files_intact": true,
+      "actions": 0,
+      "agent_checks": 2,
+      "acceptance": true,
+      "source_directory": "/tmp/superskills-loop-calculator-followup",
+      "skill_snapshot_intact": true
+    }
+  ],
+  "scope": "outside outcome screen; not a full protocol or productivity score",
+  "note": "stale/partial use corrected calculator follow-up; infrastructure failures retained separately"
+}

@@ -1,15 +1,11 @@
 ---
 name: executing-plans
 description: >-
-  Implements an approved plan task-by-task in the current session using
-  TDD and verification. Use when a plan file exists and the user chose
-  inline execution here rather than subagents per task. Use after
-  writing-plans or when the user says execute the plan, follow the
-  checklist, or implement from docs/superskills/plans. Do not use when
-  there is no plan, when only brainstorming or planning is requested, or
-  when the user asked for subagent-per-task execution—use writing-plans,
-  brainstorming, or subagent-driven-development instead. Turkish cues: planı uygula,
-  plandan devam, checklist, planı çalıştır.
+  Executes an approved plan task by task with inline execution. Use when the
+  user says execute the plan or continue its checklist. Do not use without a
+  plan, for planning only, or for subagent execution; use writing-plans or
+  subagent-driven-development. Turkish cues: planı uygula, plandan devam,
+  checklist, planı çalıştır.
 ---
 
 # Executing plans
@@ -18,7 +14,7 @@ description: >-
 
 - Every plan task checkbox completed or explicitly ruled out in the ledger.
 - Each behavior change used `test-driven-development` (red shown once).
-- Suite command from `AGENTS.md` run after each task (summary logged).
+- Affected checks run after each task; required `AGENTS.md` gates run at completion or at checkpoints the project requires (summary logged).
 - Final pass uses `verification-before-completion` before claiming done.
 - Optional: `code-review-and-quality` on the branch diff before merge handoff.
 
@@ -37,10 +33,14 @@ description: >-
 ## Per task
 
 1. Read task files and steps.
-2. Execute steps in order; use `test-driven-development` for code changes.
+2. Execute steps in order; use `test-driven-development` for behavior changes and relevant checks for documentation or configuration.
 3. If reality disagrees with the plan: ledger `Ruling: <decision> — <why> — <risk>`, then continue or escalate.
 4. If code is wrong: `systematic-debugging` (not random edits).
-5. Mark task complete in the plan and ledger; commit when the plan says so.
+5. Mark task complete in the plan and ledger; commit only when the user requested commits.
+
+## Bounded loops and resume
+
+For a requested repeat-until-verified loop or execution spanning sessions, read [loop control](references/loop-control.md). Reuse the ledger for acceptance evidence, remaining budget, and the next action. Ordinary task execution uses the steps above; no separate loop setup is needed.
 
 ## Stop and ask (only these)
 
@@ -68,5 +68,5 @@ Plan: <path>
 Tasks: <completed>/<total>
 Ledger: <path>
 Verification: <commands + summary>
-Status: complete | blocked — <reason>
+Status: complete | blocked | budget-exhausted — <reason>
 ```

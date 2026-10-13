@@ -1,14 +1,11 @@
 ---
 name: spec-driven-development
 description: >-
-  Produces a structured specification before implementation when requirements
-  are ambiguous, multi-module, or architectural. Use when starting a feature or
-  project without a written spec, when the user wants a PRD or requirements
-  doc, or when one request bundles several independently testable capabilities.
-  Do not use for typo fixes, approved bounded chat designs ready to code, or
-  when a spec file already exists and only execution is needed—use
-  incremental-implementation, writing-plans, or executing-plans instead. Turkish
-  cues: spec, spesifikasyon, gereksinim, PRD, kabul kriteri.
+  Writes a PRD or requirements doc with acceptance criteria. Use when a
+  feature needs a written specification, especially across modules. Do not use
+  for a bounded fix or execution from an approved spec or plan; use
+  incremental-implementation, writing-plans, or executing-plans. Turkish cues:
+  spec, spesifikasyon, gereksinim, PRD, kabul kriteri.
 ---
 
 # Spec-driven development
@@ -55,7 +52,7 @@ For multi-module maps: one spec file per module (`SPEC-<module-id>.md`), depende
 
 ## Boundaries
 
-- **Always:** assumptions block before spec body; spec before multi-file code.
+- **Always:** record material assumptions; obtain spec review before implementing unresolved requirements.
 - **Ask first:** architectural decisions that lock other teams; security/compliance claims without source.
 - **Never:** silent defaults on ambiguous requirements; skipping review on "obvious" features.
 

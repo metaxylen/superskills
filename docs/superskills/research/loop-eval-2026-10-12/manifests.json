@@ -1,0 +1,433 @@
+{
+  "round1-fixed": {
+    "cases": [
+      "ordinary",
+      "second-pass",
+      "budget",
+      "resume",
+      "stalled",
+      "stale",
+      "partial"
+    ],
+    "platforms": [
+      "codex",
+      "claude"
+    ],
+    "variants": [
+      "baseline",
+      "v1"
+    ],
+    "timeout_seconds": 240,
+    "repetitions": 1,
+    "snapshots": {
+      "baseline": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "f04a45c8a823bef367592b0af60aec229212e78c5e624fbaded94ba4faf6d69c",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef"
+      },
+      "v1": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "f683a5fe5f73e633d84a9266e7e0c201eb7d43c7753f5de243667a10de75f608"
+      }
+    },
+    "harness_sha256": "ec0750f30a0b3c91f90039b04b43aa676b37ab95b868b09b9ba4256bd19450a8"
+  },
+  "round2-v2": {
+    "cases": [
+      "ordinary",
+      "second-pass",
+      "budget",
+      "resume",
+      "stalled",
+      "stale",
+      "partial"
+    ],
+    "platforms": [
+      "codex",
+      "claude"
+    ],
+    "variants": [
+      "v2"
+    ],
+    "timeout_seconds": 240,
+    "repetitions": 1,
+    "snapshots": {
+      "v2": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "fabbe43f18b2f04c02040c738241be8a2aa77ea5d932a09e97d3d278f5529b71"
+      }
+    },
+    "harness_sha256": "ec0750f30a0b3c91f90039b04b43aa676b37ab95b868b09b9ba4256bd19450a8"
+  },
+  "round1-retry": {
+    "cases": [
+      "ordinary",
+      "second-pass",
+      "budget",
+      "resume",
+      "stalled",
+      "stale",
+      "partial"
+    ],
+    "platforms": [
+      "codex"
+    ],
+    "variants": [
+      "baseline",
+      "v1"
+    ],
+    "timeout_seconds": 240,
+    "repetitions": 1,
+    "snapshots": {
+      "baseline": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "f04a45c8a823bef367592b0af60aec229212e78c5e624fbaded94ba4faf6d69c",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef"
+      },
+      "v1": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "f683a5fe5f73e633d84a9266e7e0c201eb7d43c7753f5de243667a10de75f608"
+      }
+    },
+    "jobs": [
+      [
+        "codex",
+        "v1",
+        "stale"
+      ],
+      [
+        "codex",
+        "baseline",
+        "partial"
+      ],
+      [
+        "codex",
+        "v1",
+        "partial"
+      ]
+    ],
+    "retry_from": "/tmp/superskills-loop-round1-fixed",
+    "cli_versions": {
+      "codex": "codex-cli 0.162.0-alpha.17.2"
+    },
+    "harness_sha256": "d8e7dd4794b98c9dd576c843a9f460271d4cc95fca3066d05d404733572f3b37"
+  },
+  "round2-retry": {
+    "cases": [
+      "ordinary",
+      "second-pass",
+      "budget",
+      "resume",
+      "stalled",
+      "stale",
+      "partial"
+    ],
+    "platforms": [
+      "codex"
+    ],
+    "variants": [
+      "v2"
+    ],
+    "timeout_seconds": 240,
+    "repetitions": 1,
+    "snapshots": {
+      "v2": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "fabbe43f18b2f04c02040c738241be8a2aa77ea5d932a09e97d3d278f5529b71"
+      }
+    },
+    "jobs": [
+      [
+        "codex",
+        "v2",
+        "second-pass"
+      ],
+      [
+        "codex",
+        "v2",
+        "budget"
+      ],
+      [
+        "codex",
+        "v2",
+        "resume"
+      ],
+      [
+        "codex",
+        "v2",
+        "stalled"
+      ],
+      [
+        "codex",
+        "v2",
+        "stale"
+      ],
+      [
+        "codex",
+        "v2",
+        "partial"
+      ]
+    ],
+    "retry_from": "/tmp/superskills-loop-round2-v2",
+    "cli_versions": {
+      "codex": "codex-cli 0.162.0-alpha.17.2"
+    },
+    "harness_sha256": "d8e7dd4794b98c9dd576c843a9f460271d4cc95fca3066d05d404733572f3b37"
+  },
+  "calculator-followup": {
+    "cases": [
+      "stale",
+      "partial"
+    ],
+    "platforms": [
+      "codex",
+      "claude"
+    ],
+    "variants": [
+      "baseline",
+      "v1",
+      "v2"
+    ],
+    "timeout_seconds": 240,
+    "repetitions": 1,
+    "snapshots": {
+      "baseline": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "f04a45c8a823bef367592b0af60aec229212e78c5e624fbaded94ba4faf6d69c",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef"
+      },
+      "v1": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "f683a5fe5f73e633d84a9266e7e0c201eb7d43c7753f5de243667a10de75f608"
+      },
+      "v2": {
+        "skills/README.md": "d50cd581889eef217f114f8c978c8dc0dd53666a686c2c6e9bda027b387e0c3e",
+        "skills/CONSOLIDATION.md": "0a5f20a2b7c8de318029af9722da5ee98f56e228388ff12bf3fe15b5bfeef0ee",
+        "skills/using-git-worktrees/SKILL.md": "d4b963181897fb43d0a67bd26232c5782e198a471e3b6a0b75b1598d2f7b22f4",
+        "skills/using-agent-skills/SKILL.md": "17c29950a8a2cbce581e69dc9411d64dea7ab9b659fda4dd277fdfcf4f6769c4",
+        "skills/test-driven-development/SKILL.md": "dc66711bea2a0454f90451e33b1282807b76f6d47f59b1f9bec694b5308a78fa",
+        "skills/diagnosing-workflow/SKILL.md": "2ea3aaf7d07f86800b0a2765a5318c0a1dfe127dc135d6a5f463d97ee8b14a70",
+        "skills/systematic-debugging/SKILL.md": "33356e88153a98bcb1d6fe81ef624d27f40ceb5b44059c6968707c371d85c759",
+        "skills/incremental-implementation/SKILL.md": "486fd2cee501768bee4eb0d2796723c26650ed3538989caf63920785f3b09c1f",
+        "skills/executing-plans/SKILL.md": "e79d04f3c8795cbb5aa3533756022c6d2833f6fc37c85c5cdfa748346d6beba2",
+        "skills/spec-driven-development/SKILL.md": "33688320964c392cf99774810f33996ce9e17ec13661c7f85d693de0b9b5ad8f",
+        "skills/code-review-and-quality/SKILL.md": "f5ec64eda41031c365dd62a7c7b45a180881a9b5c15f615056590b07ace534d1",
+        "skills/dev-router/SKILL.md": "87c3c43180bf6a97f0bbeb0080e6e2e2d404e9c5175a3ec4b2d05bf5b06b30e5",
+        "skills/brainstorming/SKILL.md": "aa3a3ee654c1b5ea1e6ecdcf96bc6b55e3907383ef45eb3ab7de7bcfaed22fb0",
+        "skills/writing-plans/SKILL.md": "1670c29720ee49b0a5130e8bfd78d43c6ef21a7efabc4bdc27724322e4a3b11a",
+        "skills/writing-skills/SKILL.md": "60e430413cec29e12aa5b6c9e74850596058ee5c6a8a8bb33a2d1e571252a9a5",
+        "skills/verification-before-completion/SKILL.md": "8b44334308e5d1c94c4902902244f3ea0d32403c850bcac89d19a5ca87ca496a",
+        "skills/subagent-driven-development/SKILL.md": "5602a674774d09f597706e34e2686e4b42f4aebf95534efa394292670fa694da",
+        "skills/git-workflow-and-versioning/SKILL.md": "89d5e77eae708b222ec97dfc692c04bb80caac91381ee04f2e2b4a57837a8926",
+        "skills/writing-skills/references/mechanics.md": "db578fc09a1b80b7f08c01082115bbf3c03919e991f63dc4e1e7af10a24b4cef",
+        "skills/executing-plans/references/loop-control.md": "fabbe43f18b2f04c02040c738241be8a2aa77ea5d932a09e97d3d278f5529b71"
+      }
+    },
+    "jobs": [
+      [
+        "codex",
+        "baseline",
+        "stale"
+      ],
+      [
+        "claude",
+        "baseline",
+        "stale"
+      ],
+      [
+        "codex",
+        "v1",
+        "stale"
+      ],
+      [
+        "claude",
+        "v1",
+        "stale"
+      ],
+      [
+        "codex",
+        "v2",
+        "stale"
+      ],
+      [
+        "claude",
+        "v2",
+        "stale"
+      ],
+      [
+        "codex",
+        "baseline",
+        "partial"
+      ],
+      [
+        "claude",
+        "baseline",
+        "partial"
+      ],
+      [
+        "codex",
+        "v1",
+        "partial"
+      ],
+      [
+        "claude",
+        "v1",
+        "partial"
+      ],
+      [
+        "codex",
+        "v2",
+        "partial"
+      ],
+      [
+        "claude",
+        "v2",
+        "partial"
+      ]
+    ],
+    "retry_from": null,
+    "cli_versions": {
+      "claude": "2.1.291 (Claude Code)",
+      "codex": "codex-cli 0.162.0-alpha.17.2"
+    },
+    "harness_sha256": "c5601103ad59eb8734410c7845d282425f0f567746abd59b19cfc72acd7948b4"
+  }
+}

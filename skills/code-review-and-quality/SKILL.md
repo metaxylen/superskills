@@ -1,14 +1,11 @@
 ---
 name: code-review-and-quality
 description: >-
-  Reviews a diff, branch, or pull request without rewriting code by default.
-  Use when the user asks for a review, PR feedback, "look at my changes", or
-  before merge. Use when evaluating code from another agent or model. Do not use
-  when the user wants implementation, root-cause debugging of a failure, or
-  only a test written—use incremental-implementation, systematic-debugging, or
-  test-driven-development instead. Do not use when there is no diff or change
-  set to review. Turkish cues: PR incele, code review, diffe bak, değişikliklere
-  bak, merge öncesi.
+  Reviews a diff, branch, or pull request. Use for PR feedback or look at my
+  changes. Do not use without a change set, for implementation, or for
+  root-cause investigation; use incremental-implementation or
+  systematic-debugging. Turkish cues: PR incele, code review, diffe bak,
+  değişikliklere bak, merge öncesi.
 ---
 
 # Code review and quality
