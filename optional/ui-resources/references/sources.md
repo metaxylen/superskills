@@ -39,6 +39,8 @@ Verified against the GitHub API and vendor docs on 2026-10-13; stars change, re-
 | [shuding/cobe](https://github.com/shuding/cobe) | Small WebGL globe |
 | [chenglou/pretext](https://github.com/chenglou/pretext) | Text measurement and layout; not evaluated in depth |
 
+3D models, HDRIs and textures to download (Sketchfab, Poly Haven, Smithsonian, BlenderKit, Kenney, KayKit, Quaternius, ambientCG and more): see [3d-assets.md](3d-assets.md). Every asset needs the user's approval before use.
+
 ## Fonts, generators, verification
 
 | Source | Use for |

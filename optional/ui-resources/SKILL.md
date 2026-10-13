@@ -23,10 +23,14 @@ The agent decides the design direction and fetches what it needs. Sources are in
 5. **Choose the tech tier** from the motion level the read implies (`stack-tiers.md`). Use the lowest tier that delivers the idea. Prefer components already in the project, then copy-in components (shadcn registry, React Bits, Magic UI) over new dependencies.
 6. **Build, then look.** Screenshot at mobile and desktop widths when a browser tool exists, critique against the plan, remove one decoration. Quality floor: responsive, visible keyboard focus, `prefers-reduced-motion` respected, readable contrast, no layout shift from effects.
 
+## 3D assets
+
+When the design needs a 3D model, HDRI or texture, search the sources in [references/3d-assets.md](references/3d-assets.md). **Do not download or use any asset until the user approves that specific asset**; present name, link, license and attribution need, polygon count and why it fits, then wait. Details and the full source list are in that file.
+
 ## Autonomy
 
 - **Do without asking:** read-only fetches (`gh api` for repo files, docs pages, `shadcn` view/search commands), reading the catalog, screenshots of a local dev server.
-- **Ask first:** adding a dependency, installing an MCP server, any paid tool or API key, sending project content to an external generator, replacing an existing design system.
+- **Ask first:** using any 3D or media asset (approval rule above), adding a dependency, installing an MCP server, any paid tool or API key, sending project content to an external generator, replacing an existing design system.
 
 ## Boundaries
 

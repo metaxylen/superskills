@@ -67,3 +67,18 @@ Limits: three briefs, one run each, one judge from the same model family, hero v
 2. Keep the catalog in `references/`, with verified entries only and fetch commands next to each.
 3. Let the agent do read-only fetches (GitHub API, docs, `shadcn view`) without asking; ask before installing dependencies, adding MCP servers, using paid tools or sending project content out.
 4. Do not duplicate `anthropics/skills` frontend-design or taste-skill. Point to them as installable companions.
+
+## 3D asset sources (2026-10-14)
+
+Discovery by web search (one extended, two standard) and GitHub search (no useful awesome list found), then verification by fetching vendor pages and calling APIs. Findings that changed the first list:
+
+- Sketchfab was bought by KitBash from Epic (announced 2026-08-10). Search still works today; the download API and free policy after the sale are unannounced.
+- Smithsonian 3D models are CC0 and reachable through the Sketchfab search API under user `Smithsonian`; the Open Access API also responds.
+- BlenderKit's search API works without login; its free assets are royalty-free, not CC0.
+- Gobkit exposes a CC0 JSON API with rigged models, but only about 99 models.
+- KayKit (CC0, itch.io) and OpenGameArt (mixed licenses) were missing from the first pass.
+- Quaternius has its own license, not CC0.
+- Objaverse is a research dataset with per-object licenses; not for production.
+- Smithsonian 3D site, Mixamo, Poly Pizza's license page, CGTrader, TurboSquid and Free3D could not be fully verified.
+
+The skill requires user approval before any asset is used. Full tables: `optional/ui-resources/references/3d-assets.md`.
