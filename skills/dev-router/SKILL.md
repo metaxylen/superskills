@@ -49,6 +49,7 @@ description: >-
 | Approved plan with requested or project-authorized delegation | `subagent-driven-development` |
 | Run Codex CLI, codex exec, parallel codex lanes | `codex-fleet` (optional — `optional/`) |
 | Usage limit, quota left, how much capacity | `limit` (optional — `optional/`) |
+| Building or restyling UI; need components, fonts, or design references | `ui-resources` (optional — `optional/`) |
 | Claiming done; need proof before closing | `verification-before-completion` |
 | Skills meta, which workflow, slash skill help | `using-agent-skills` |
 | Session went wrong, wrong skill, wasted loop | `diagnosing-workflow` |

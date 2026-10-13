@@ -18,6 +18,7 @@ Not part of the v1 sixteen in `skills/`. Link alongside superskills.
 | `grilling` | Relentless interview to stress-test a plan or design |
 | `domain-modeling` | `GLOSSARY.md`, ADRs, ubiquitous language |
 | `codebase-design` | Deep modules, seams, interface depth (shared vocabulary) |
+| `ui-resources` | Curated UI libraries, design references, fonts and check tools; edit `references/sources.md` to add yours |
 
 ## Engineering workflow
 
