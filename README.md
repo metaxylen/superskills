@@ -1,112 +1,112 @@
 # superskills
 
-Yazılım geliştirme sürecinde Cursor (ve gerektiğinde Claude Code / Codex) ile çalışırken kullandığım **agent skill** kütüphanesi. Kısaca: “her seferinde aynı disiplini sıfırdan tarif etmek” yerine, mesajına göre doğru moda geçen **on altı tane net workflow** — plan, debug, TDD, PR, git, worktree, subagent, skill yazımı… Hepsi [Agent Skills](https://agentskills.io/specification) formatında; Türkçe tetikleyiciler `description` içinde, gövdeler İngilizce.
+A library of **agent skills** for software development with Cursor (and Claude Code / Codex when needed). Instead of re-describing the same discipline in every chat, your message switches the agent into the right mode: **sixteen focused workflows** for planning, debugging, TDD, PRs, git, worktrees, subagents and skill authoring. All skills follow the [Agent Skills](https://agentskills.io/specification) format; Turkish trigger phrases live in each `description`, bodies are English.
 
-Bu repo **uygulama kodu değil**. Ürün burada: `skills/*/SKILL.md`. Gerçek projende `npm test` neyse onu skill’ler ezberlemez; proje kökündeki **`AGENTS.md`** okunur.
-
----
-
-## Bu işe yarar mı?
-
-Evet, eğer agent ile gerçekten kod yazıyorsan. Fayda şu:
-
-- **Belirsiz mesaj** (“şuna bak”, log yapıştırma) → önce `dev-router`, sonra tek uzman.
-- **Net iş** (“plan yaz”, “kök neden”, “PR incele”) → doğrudan ilgili skill; plan modunda debug’a kaymaz.
-- **“Bitti”** dediğinde → `verification-before-completion` mantığı: komut koştur, sonra konuş.
-
-Skill sihir değil; iyi mühendislik alışkanlığını her oturumda hatırlatan **checklist + routing**.
+This repo is **not application code**. The product is `skills/*/SKILL.md`. Skills do not memorize what `npm test` means in your project; they read the **`AGENTS.md`** at the project root.
 
 ---
 
-## 5 dakikada kurulum
+## Is it worth it?
 
-**1.** Repoyu klonla.
+Yes, if you write code with an agent. What you get:
 
-**2.** Skill’leri makineye bağla — **v1 için bir yöntem seç** (ikisini aynı isimlerle karıştırma):
+- **Vague message** ("take a look", pasted logs) → `dev-router` first, then one specialist.
+- **Clear job** ("write a plan", "root cause", "review this PR") → the matching skill directly; plan mode does not drift into debugging.
+- **"Done"** → `verification-before-completion`: run the command, then speak.
 
-| Ne yapıyorsun? | Komut |
+Skills are not magic; they are **checklists plus routing** that remind the agent of good engineering habits in every session.
+
+---
+
+## Setup in five minutes
+
+**1.** Clone the repo.
+
+**2.** Link the skills on your machine. **Pick one method for the v1 names** (do not mix both for the same names):
+
+| What are you doing? | Command |
 |----------------|--------|
-| Burada skill düzenliyorum (symlink) | `./scripts/link-cursor-skills.sh` |
-| “Gerçek” Cursor plugin dizini | `./scripts/install-cursor-plugin.sh` |
-| Hepsi bir arada: Cursor + Claude + Codex + optional | `./scripts/link-all-skills.sh` |
+| Editing skills here (symlinks) | `./scripts/link-cursor-skills.sh` |
+| A "real" Cursor plugin directory | `./scripts/install-cursor-plugin.sh` |
+| Everything: Cursor + Claude + Codex + optional | `./scripts/link-all-skills.sh` |
 
-Symlink kullanıyorsan repoda değişiklik yaptığında Cursor’da **Reload Window** veya **yeni Agent chat**.
+With symlinks, after changing the repo use **Reload Window** in Cursor or start a **new Agent chat**.
 
-Detay: [docs/plugins.md](docs/plugins.md), [docs/claude-code.md](docs/claude-code.md), [docs/codex.md](docs/codex.md).
+Details: [docs/plugins.md](docs/plugins.md), [docs/claude-code.md](docs/claude-code.md), [docs/codex.md](docs/codex.md).
 
-**3.** Geliştirdiğin **uygulama** repo’suna kökte `AGENTS.md` koy — şablon: [docs/templates/AGENTS.example.md](docs/templates/AGENTS.example.md). Test, lint, build komutları orada.
+**3.** In the **application** repo you work on, put an `AGENTS.md` at the root. Template: [docs/templates/AGENTS.example.md](docs/templates/AGENTS.example.md). Test, lint and build commands live there.
 
-Bundan sonra chat’i uygulama klasöründe aç; skill’ler global yüklü (`~/.cursor/skills`), komutlar projeden gelir.
-
----
-
-## Günlük akış (kafanda canlandır)
-
-```
-Fikir net değil     → brainstorming → writing-plans
-Plan hazır          → executing-plans / incremental-implementation / spec-driven-development
-Test kırıldı        → systematic-debugging → (gerekirse) test-driven-development
-PR / diff           → code-review-and-quality
-Ship                → git-workflow-and-versioning + verification-before-completion
-Paralel / izolasyon → using-git-worktrees, subagent-driven-development
-```
-
-“Hangi skill?” diye düşünürsen → `using-agent-skills`. Oturum çöp gitti → `diagnosing-workflow`.
+After that, open the chat in the application folder; skills are loaded globally (`~/.cursor/skills`), commands come from the project.
 
 ---
 
-## v1 — on altı skill
+## Daily flow
 
-Tam liste ve Türkçe özet: [skills/CONSOLIDATION.md](skills/CONSOLIDATION.md).
+```
+Idea unclear         → brainstorming → writing-plans
+Plan ready           → executing-plans / incremental-implementation / spec-driven-development
+Test broke           → systematic-debugging → (if needed) test-driven-development
+PR / diff            → code-review-and-quality
+Ship                 → git-workflow-and-versioning + verification-before-completion
+Parallel / isolation → using-git-worktrees, subagent-driven-development
+```
 
-| Aşama | Skill’ler |
+Unsure which skill to use → `using-agent-skills`. Session went badly → `diagnosing-workflow`.
+
+---
+
+## v1: sixteen skills
+
+Full list and summary: [skills/CONSOLIDATION.md](skills/CONSOLIDATION.md).
+
+| Stage | Skills |
 |--------|-----------|
-| Yönlendirme | `dev-router` |
-| Keşif & plan | `brainstorming`, `writing-plans` |
-| Kod | `executing-plans`, `incremental-implementation`, `spec-driven-development`, `test-driven-development` |
-| Kalite | `systematic-debugging`, `verification-before-completion`, `code-review-and-quality` |
-| Git & ortam | `git-workflow-and-versioning`, `using-git-worktrees`, `subagent-driven-development` |
+| Routing | `dev-router` |
+| Discovery and planning | `brainstorming`, `writing-plans` |
+| Code | `executing-plans`, `incremental-implementation`, `spec-driven-development`, `test-driven-development` |
+| Quality | `systematic-debugging`, `verification-before-completion`, `code-review-and-quality` |
+| Git and environment | `git-workflow-and-versioning`, `using-git-worktrees`, `subagent-driven-development` |
 | Meta | `using-agent-skills`, `writing-skills`, `diagnosing-workflow` |
 
-Türkçe örnek tetikleyiciler: `plan yaz`, `kök neden`, `PR incele`, `worktree`, `hangi skill`, `oturum kötü` — tamamı her skill’in YAML `description` alanında (`Turkish cues:`).
+Example Turkish triggers: `plan yaz`, `kök neden`, `PR incele`, `worktree`, `hangi skill`, `oturum kötü`. All of them are in each skill's YAML `description` field (`Turkish cues:`).
 
 ---
 
-## Optional (istersen)
+## Optional
 
-`optional/` ayrı katalog: Codex fleet, kota ekranı (`limit`), planı sorgulama (`grilling`), iki eksen review, domain model, vb. Plugin paketine **dahil değil**; `./scripts/link-optional-skills.sh` ile aynı symlink isimlerine bağlanır.
+`optional/` is a separate catalog: Codex fleet, usage-limit screen (`limit`), plan interrogation (`grilling`), two-axis review, domain modeling, UI resources with a 3D asset source list (`ui-resources`), and more. It is **not** part of the plugin package; `./scripts/link-optional-skills.sh` links it into the same symlink locations.
 
-Özet tablo: [optional/README.md](optional/README.md).
+Summary table: [optional/README.md](optional/README.md).
 
 ---
 
-## Repo haritası
+## Repo map
 
-| Klasör | Ne? |
-|--------|-----|
-| `skills/` | v1 — Cursor plugin buradan |
-| `optional/` | Ek skill’ler (MIT parçalar `optional/LICENSE-MIT-*.txt`) |
-| `scripts/` | Kurulum |
-| `tests/` | Frontmatter, routing, senaryo smoke — `./tests/run-all.sh` |
-| `docs/` | Plan/spec şablonları, kurulum notları |
+| Folder | What |
+|--------|------|
+| `skills/` | v1; the Cursor plugin is built from here |
+| `optional/` | Extra skills (MIT parts in `optional/LICENSE-MIT-*.txt`) |
+| `scripts/` | Installation |
+| `tests/` | Frontmatter, routing and scenario smoke tests: `./tests/run-all.sh` |
+| `docs/` | Plan/spec templates, install notes, research notes |
 | `.cursor-plugin/` | Plugin manifest |
-| `AGENTS.md` | **Bu repoda** agent’a özel operasyon rehberi (skill yazarken) |
+| `AGENTS.md` | Operating guide for agents **in this repo** (when authoring skills) |
 
-`documentations/` yalnızca **lokal** notlar (gitignore; GitHub’da yok).
+`documentations/` holds **local** notes only (gitignored; not on GitHub).
 
 ---
 
-## Bu repoda feature / skill değişikliği
+## Changing a feature or skill in this repo
 
 - Plan: `docs/superskills/plans/YYYY-MM-DD-<feature>.md`
 - Spec: `docs/superskills/specs/<feature>.md`
-- Değişiklikten sonra: `./tests/run-all.sh` (veya `npm test`)
-- Cursor’da routing dene: [tests/routing-manual-test.md](tests/routing-manual-test.md)
+- After a change: `./tests/run-all.sh` (or `npm test`)
+- Try routing in Cursor: [tests/routing-manual-test.md](tests/routing-manual-test.md)
 
-Agent komutları ve sınırlar: [AGENTS.md](AGENTS.md).
+Agent commands and limits: [AGENTS.md](AGENTS.md).
 
 ---
 
-## Lisans
+## License
 
-Ana skill seti ve repo metinleri kişisel / henüz kök `LICENSE` dosyası yok — fork edip kullanırken kendi koşullarını netleştir. `optional/` altındaki vendored parçalar için [LICENSE-MIT-vendor.txt](optional/LICENSE-MIT-vendor.txt) ve [LICENSE-MIT-mattpocock.txt](optional/LICENSE-MIT-mattpocock.txt).
+The main skill set and repo text are personal and there is no root `LICENSE` file yet; settle your own terms if you fork it. Vendored parts under `optional/` are covered by [LICENSE-MIT-vendor.txt](optional/LICENSE-MIT-vendor.txt) and [LICENSE-MIT-mattpocock.txt](optional/LICENSE-MIT-mattpocock.txt). `optional/codex-fleet` is third-party work; see [optional/README.md](optional/README.md).

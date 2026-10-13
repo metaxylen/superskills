@@ -4,23 +4,23 @@ Sixteen skills. One `SKILL.md` each. No duplicate or archived skill trees in thi
 
 | Skill | Role |
 |-------|------|
-| `dev-router` | Belirsiz istek → tek uzman |
-| `brainstorming` | Ne yapılacağını netleştir (kod yok) |
-| `writing-plans` | Spec → adımlar |
-| `executing-plans` | Planı uygula |
-| `incremental-implementation` | Küçük, artımlı kod değişikliği |
-| `spec-driven-development` | Spec’ten implementasyon |
-| `test-driven-development` | Kırmızı-yeşil test |
-| `systematic-debugging` | Sebep bul, sonra düzelt |
-| `verification-before-completion` | Bitti demeden doğrula |
-| `code-review-and-quality` | PR/diff inceleme |
-| `git-workflow-and-versioning` | Branch, merge, bitirme |
-| `using-git-worktrees` | İzole worktree |
-| `subagent-driven-development` | Alt ajan / paralel iş |
-| `using-agent-skills` | Skill kullanım kuralları |
-| `writing-skills` | Yeni skill yazımı |
-| `diagnosing-workflow` | Oturum kötü gittiğinde teşhis |
+| `dev-router` | Unclear request → one specialist |
+| `brainstorming` | Clarify what to build (no code) |
+| `writing-plans` | Spec → ordered steps |
+| `executing-plans` | Execute an approved plan |
+| `incremental-implementation` | Small, incremental code change |
+| `spec-driven-development` | Write a spec with acceptance criteria |
+| `test-driven-development` | Red-green-refactor |
+| `systematic-debugging` | Find the root cause, then fix |
+| `verification-before-completion` | Verify before saying done |
+| `code-review-and-quality` | PR/diff review |
+| `git-workflow-and-versioning` | Branch, merge, finish |
+| `using-git-worktrees` | Isolated worktree |
+| `subagent-driven-development` | Subagent / parallel work |
+| `using-agent-skills` | How skills work and which to use |
+| `writing-skills` | Author new skills |
+| `diagnosing-workflow` | Diagnose a session that went badly |
 
-Cursor’a yalnız bu klasörleri bağla (`~/.cursor/skills` symlink veya seçili install). Ek skill’ler: `optional/` (ayrı katalog).
+Link only these folders into Cursor (`~/.cursor/skills` symlinks or a selected install). Extra skills live in `optional/` (a separate catalog).
 
-Türkçe tetikleyiciler yalnızca her `SKILL.md` içindeki `description` alanında (`Turkish cues:`). Doğrulama: `./tests/run-all.sh`.
+Turkish triggers appear only in each `SKILL.md` `description` field (`Turkish cues:`). Validation: `./tests/run-all.sh`.
